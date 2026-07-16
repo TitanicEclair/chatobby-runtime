@@ -1,0 +1,4 @@
+*.exe
+*.sha256.txt
+*.pem
+release-assets/
