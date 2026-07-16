@@ -2,6 +2,24 @@
 
 Initial Windows x64 public-alpha runtime for the Chatobby Obsidian connector.
 
+## Install on Windows
+
+[![Download Chatobby for Windows](https://img.shields.io/badge/Download%20Chatobby-Windows%20installer-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe)
+
+1. Install and enable Chatobby from Obsidian's Community plugin directory.
+2. Download and run **`Chatobby-Setup.exe`** using the button above.
+3. Complete the licence, data-flow, and alpha-safety confirmations.
+4. Return to Chatobby in Obsidian and select **Check again**.
+5. Connect a model provider in **Settings → Chatobby**.
+
+> **Download the `.exe`, not “Source code.”** GitHub automatically adds Source
+> code (zip) and Source code (tar.gz) links to every release. Those contain only
+> this repository's documentation and cannot install Chatobby.
+
+For verification, download the
+[SHA-256 checksum](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
+and compare it with the installer before running it.
+
 ## Included
 
 - Local multi-provider agent runtime

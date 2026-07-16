@@ -10,14 +10,25 @@ connector over authenticated loopback connections.
 > files and vaults you intend to use, begin with a copied test note, and grant
 > only the permissions required for your task.
 
+## Download for Windows
+
+[![Download Chatobby for Windows](https://img.shields.io/badge/Download%20Chatobby-Windows%20installer-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe)
+
+Download **`Chatobby-Setup.exe`**. The **Source code (zip)** and **Source code
+(tar.gz)** links that GitHub adds to the release are documentation snapshots;
+they do not install Chatobby.
+
 ## Install
 
 1. Install Chatobby from Obsidian's Community plugin directory.
-2. Download `Chatobby-Setup.exe` and its checksum from the
-   [latest release](https://github.com/TitanicEclair/chatobby-runtime/releases/latest).
-3. Verify the SHA-256 checksum.
-4. Run the installer. Return to Obsidian and select **Check again**.
-5. Connect your own model provider in **Settings → Chatobby**.
+2. Select **Get runtime** in Chatobby, or use the download button above.
+3. Run the downloaded `Chatobby-Setup.exe` and complete the installer.
+4. Return to Chatobby and select **Check again**.
+5. Connect a model provider in **Settings → Chatobby**.
+
+For additional verification, download the
+[SHA-256 checksum](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
+from the same release and follow [INSTALL.md](INSTALL.md).
 
 The initial alpha installer is not Authenticode-signed and Windows may identify
 it as an unknown publisher. Download only from this repository and verify the

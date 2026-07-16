@@ -1,5 +1,11 @@
 # Install Chatobby Runtime
 
+[![Download Chatobby for Windows](https://img.shields.io/badge/Download%20Chatobby-Windows%20installer-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe)
+
+The installer is **`Chatobby-Setup.exe`**. Do not download GitHub's **Source
+code (zip)** or **Source code (tar.gz)** links; those are automatic snapshots
+of this documentation repository and cannot install Chatobby.
+
 ## Requirements
 
 - Windows 10 or 11 on x64 hardware
@@ -10,7 +16,8 @@
 ## Verify and install
 
 Download both `Chatobby-Setup.exe` and
-`Chatobby-Setup.exe.sha256.txt` from the same GitHub release. In PowerShell:
+[`Chatobby-Setup.exe.sha256.txt`](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
+from the same GitHub release. In PowerShell:
 
 ```powershell
 Get-FileHash -Algorithm SHA256 .\Chatobby-Setup.exe
@@ -20,6 +27,11 @@ Get-Content .\Chatobby-Setup.exe.sha256.txt
 The values must match. Run the installer as the Windows user who runs Obsidian.
 The runtime is installed under `%LOCALAPPDATA%\Chatobby\runtime`; the installer
 does not write into an Obsidian vault or install the Community plugin.
+
+Windows may show an unknown-publisher warning because the initial alpha is not
+yet Authenticode-signed. Confirm that the file came from this official
+repository and that its checksum matches before choosing to continue. Do not
+disable SmartScreen or antivirus globally.
 
 After installation, open Chatobby in Obsidian and select **Check again**. The
 connector verifies the runtime package signature and every inventoried file
