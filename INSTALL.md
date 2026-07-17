@@ -2,9 +2,11 @@
 
 [![Download Chatobby for Windows](https://img.shields.io/badge/Download%20Chatobby-Windows%20installer-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe)
 
-The installer is **`Chatobby-Setup.exe`**. Do not download GitHub's **Source
-code (zip)** or **Source code (tar.gz)** links; those are automatic snapshots
-of this documentation repository and cannot install Chatobby.
+The normal setup path is Chatobby's signed in-plugin installation guide. The
+Windows installer **`Chatobby-Setup.exe`** is available as a manual
+alternative. Do not download GitHub's **Source code (zip)** or **Source code
+(tar.gz)** links; those are automatic snapshots of this documentation
+repository and cannot install Chatobby.
 
 ## Requirements
 
@@ -13,7 +15,20 @@ of this documentation repository and cannot install Chatobby.
 - The Chatobby Community plugin
 - A model-provider account or local provider supported by Chatobby
 
-## Verify and install
+## Install from Obsidian
+
+1. Install and enable Chatobby from Obsidian's Community plugin directory.
+2. Open Chatobby from the ribbon and select **Install runtime**.
+3. Review the version, download size, source, and verification explanation.
+4. Select **Install** and wait for **Chatobby is ready**.
+5. Connect a model provider in **Settings → Chatobby**.
+
+Chatobby downloads from this repository only after confirmation. It verifies
+the signed update descriptor, signed runtime manifest, and every packaged file
+before installing atomically under `%LOCALAPPDATA%\Chatobby\runtime`. It does
+not request administrator access or run a downloaded Windows installer.
+
+## Manual installer alternative
 
 Download both `Chatobby-Setup.exe` and
 [`Chatobby-Setup.exe.sha256.txt`](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
@@ -39,9 +54,11 @@ before starting it.
 
 ## Update
 
-Obsidian updates the connector. Runtime updates are installed deliberately from
-this repository. Download the new installer and checksum, verify them, and run
-the installer. Chatobby does not silently download or execute runtime updates.
+Obsidian updates the connector. When a compatible runtime update is available,
+Chatobby shows **Update Chatobby** above the composer. Open the guide, review
+the release details, and confirm **Update**. The package is downloaded and
+installed only after that confirmation; Chatobby does not silently update the
+runtime. The manual installer remains an alternative.
 
 ## Uninstall
 

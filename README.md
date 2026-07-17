@@ -21,10 +21,17 @@ they do not install Chatobby.
 ## Install
 
 1. Install Chatobby from Obsidian's Community plugin directory.
-2. Select **Get runtime** in Chatobby, or use the download button above.
-3. Run the downloaded `Chatobby-Setup.exe` and complete the installer.
-4. Return to Chatobby and select **Check again**.
+2. Open Chatobby and select **Install runtime**.
+3. Review the version, download size, source, and verification details, then
+   select **Install**.
+4. Wait for **Chatobby is ready**. If detection was interrupted, select
+   **Check again**.
 5. Connect a model provider in **Settings → Chatobby**.
+
+The plugin downloads the signed runtime package only after confirmation,
+verifies it file-by-file, installs it for the current Windows account without
+administrator access, and reconnects the vault. The download button above is
+the manual installer alternative.
 
 For additional verification, download the
 [SHA-256 checksum](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
