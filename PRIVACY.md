@@ -21,5 +21,5 @@ choose to visit the optional support page.
 
 The complete versioned `PRIVACY-AND-DATA-FLOW-NOTICE.txt` is displayed by the
 installer and attached to every release. Questions can be sent to
-`madelyntan0223@gmail.com`. Do not send provider keys, private notes, or
+`thatsmad002@gmail.com`. Do not send provider keys, private notes, or
 unredacted diagnostics.

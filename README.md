@@ -12,11 +12,17 @@ connector over authenticated loopback connections.
 
 ## Download for Windows
 
-[![Download Chatobby for Windows](https://img.shields.io/badge/Download%20Chatobby-Windows%20installer-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe)
+[![View the latest Windows downloads](https://img.shields.io/badge/Chatobby-Latest%20Windows%20downloads-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest)
 
-Download **`Chatobby-Setup.exe`**. The **Source code (zip)** and **Source code
-(tar.gz)** links that GitHub adds to the release are documentation snapshots;
-they do not install Chatobby.
+The release provides two clearly separated installers:
+
+| Installer | Use it when | Vault selection |
+|---|---|---|
+| `Chatobby-Runtime-Setup-<version>.exe` | The Chatobby Community plugin is already installed | None |
+| `Chatobby-Standalone-Setup-<version>.exe` | You want setup to install both the runtime and plugin | Selects one existing Obsidian vault |
+
+The **Source code (zip)** and **Source code (tar.gz)** links that GitHub adds to
+the release are documentation snapshots; they do not install Chatobby.
 
 ## Install
 
@@ -30,12 +36,12 @@ they do not install Chatobby.
 
 The plugin downloads the signed runtime package only after confirmation,
 verifies it file-by-file, installs it for the current Windows account without
-administrator access, and reconnects the vault. The download button above is
-the manual installer alternative.
+administrator access, and reconnects the vault. The release page above offers
+the two manual installer alternatives.
 
 For additional verification, download the
-[SHA-256 checksum](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
-from the same release and follow [INSTALL.md](INSTALL.md).
+matching SHA-256 checksum from the same release and follow
+[INSTALL.md](INSTALL.md).
 
 The initial alpha installer is not Authenticode-signed and Windows may identify
 it as an unknown publisher. Download only from this repository and verify the

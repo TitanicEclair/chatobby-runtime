@@ -1,12 +1,16 @@
 # Install Chatobby Runtime
 
-[![Download Chatobby for Windows](https://img.shields.io/badge/Download%20Chatobby-Windows%20installer-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe)
+[![View the latest Windows downloads](https://img.shields.io/badge/Chatobby-Latest%20Windows%20downloads-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest)
 
 The normal setup path is Chatobby's signed in-plugin installation guide. The
-Windows installer **`Chatobby-Setup.exe`** is available as a manual
-alternative. Do not download GitHub's **Source code (zip)** or **Source code
-(tar.gz)** links; those are automatic snapshots of this documentation
-repository and cannot install Chatobby.
+release also provides two manual installation types. Do not download GitHub's
+**Source code (zip)** or **Source code (tar.gz)** links; those are automatic
+snapshots of this documentation repository and cannot install Chatobby.
+
+| Installer | Installs | Vault selection |
+|---|---|---|
+| `Chatobby-Runtime-Setup-<version>.exe` | Runtime only, for the Community plugin | None |
+| `Chatobby-Standalone-Setup-<version>.exe` | Runtime and plugin | Selects one existing Obsidian vault |
 
 ## Requirements
 
@@ -30,18 +34,20 @@ not request administrator access or run a downloaded Windows installer.
 
 ## Manual installer alternative
 
-Download both `Chatobby-Setup.exe` and
-[`Chatobby-Setup.exe.sha256.txt`](https://github.com/TitanicEclair/chatobby-runtime/releases/latest/download/Chatobby-Setup.exe.sha256.txt)
-from the same GitHub release. In PowerShell:
+Download one installer and its adjacent `.sha256.txt` file from the same GitHub
+release. In PowerShell, substitute the exact downloaded filename:
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\Chatobby-Setup.exe
-Get-Content .\Chatobby-Setup.exe.sha256.txt
+Get-FileHash -Algorithm SHA256 .\Chatobby-Runtime-Setup-0.1.5.exe
+Get-Content .\Chatobby-Runtime-Setup-0.1.5.exe.sha256.txt
 ```
 
 The values must match. Run the installer as the Windows user who runs Obsidian.
-The runtime is installed under `%LOCALAPPDATA%\Chatobby\runtime`; the installer
-does not write into an Obsidian vault or install the Community plugin.
+The Runtime installer writes under `%LOCALAPPDATA%\Chatobby\runtime`; it does
+not write into an Obsidian vault or install the Community plugin. The
+Standalone installer asks for an existing vault, installs the three plugin
+files under `.obsidian\plugins\chatobby`, and preserves existing `data.json`
+settings.
 
 Windows may show an unknown-publisher warning because the initial alpha is not
 yet Authenticode-signed. Confirm that the file came from this official
