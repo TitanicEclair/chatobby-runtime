@@ -7,17 +7,15 @@ replaced or withdrawn when a security or integrity issue is found.
 
 ## Verify a download
 
-Download only from this repository's Releases page and compare
-`Chatobby-Setup.exe` with the attached SHA-256 checksum. The connector also
-verifies the runtime's Ed25519 package signature and file inventory before use.
-
-The initial alpha installer is not Authenticode-signed. An unknown-publisher
-warning is therefore expected; a checksum mismatch is not.
+Install and update through the Chatobby Community plugin. The connector
+downloads only from this repository and verifies the Ed25519 update signature,
+signed runtime manifest, and every inventoried file before use. A signature or
+checksum mismatch is a release-integrity failure and must not be bypassed.
 
 ## Report a vulnerability
 
 Use GitHub's private vulnerability-reporting feature when it is available for
-this repository. Otherwise email `madelyntan0223@gmail.com` with a minimal,
+this repository. Otherwise email `thatsmad002@gmail.com` with a minimal,
 redacted reproduction. Do not open a public issue containing exploit details,
 credentials, private note content, or identifying session logs.
 

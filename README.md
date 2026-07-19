@@ -10,19 +10,15 @@ connector over authenticated loopback connections.
 > files and vaults you intend to use, begin with a copied test note, and grant
 > only the permissions required for your task.
 
-## Download for Windows
+## Install on Windows
 
-[![View the latest Windows downloads](https://img.shields.io/badge/Chatobby-Latest%20Windows%20downloads-0078D4?logo=windows&logoColor=white)](https://github.com/TitanicEclair/chatobby-runtime/releases/latest)
+[![Install Chatobby in Obsidian](https://img.shields.io/badge/Install%20in-Obsidian-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md/plugins?id=chatobby)
 
-The release provides two clearly separated installers:
-
-| Installer | Use it when | Vault selection |
-|---|---|---|
-| `Chatobby-Runtime-Setup-<version>.exe` | The Chatobby Community plugin is already installed | None |
-| `Chatobby-Standalone-Setup-<version>.exe` | You want setup to install both the runtime and plugin | Selects one existing Obsidian vault |
-
-The **Source code (zip)** and **Source code (tar.gz)** links that GitHub adds to
-the release are documentation snapshots; they do not install Chatobby.
+Install Chatobby through Obsidian, then use the installation guide inside the
+Chatobby view. Runtime release assets are consumed and verified by the plugin;
+they are not standalone installers. The **Source code (zip)** and **Source code
+(tar.gz)** links GitHub adds automatically are documentation snapshots and do
+not install Chatobby.
 
 ## Install
 
@@ -36,23 +32,18 @@ the release are documentation snapshots; they do not install Chatobby.
 
 The plugin downloads the signed runtime package only after confirmation,
 verifies it file-by-file, installs it for the current Windows account without
-administrator access, and reconnects the vault. The release page above offers
-the two manual installer alternatives.
+administrator access, and reconnects the vault.
 
-For additional verification, download the
-matching SHA-256 checksum from the same release and follow
-[INSTALL.md](INSTALL.md).
-
-The initial alpha installer is not Authenticode-signed and Windows may identify
-it as an unknown publisher. Download only from this repository and verify the
-published checksum. Do not disable SmartScreen or antivirus globally.
+The runtime executable is not launched as a downloaded installer. Chatobby
+verifies the Ed25519-signed update descriptor, signed package manifest, and
+every packaged file before activating the update.
 
 See [INSTALL.md](INSTALL.md) for installation, update, and uninstall guidance.
 
 ## Distribution and source
 
 The runtime is distributed as licensed object code and its source is not
-published in this repository. The installer contains the complete runtime
+published in this repository. The runtime package contains the complete runtime
 licence, privacy/data-flow notice, alpha-risk notice, dependency licences,
 third-party notices, SPDX SBOM, build provenance, checksums, and an
 Ed25519-signed package manifest. See [LICENSE.md](LICENSE.md) and
