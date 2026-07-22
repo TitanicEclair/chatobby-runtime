@@ -10,10 +10,17 @@ cannot install Chatobby.
 
 ## Requirements
 
-- Windows 10 or 11 on x64 hardware
+- Windows 10 or 11 on x64 hardware, or macOS 11 or newer on Apple Silicon or
+  Intel hardware
 - Obsidian 1.8.0 or newer
 - The Chatobby Community plugin
 - A model-provider account or local provider supported by Chatobby
+
+macOS support is experimental and has not yet been verified by an external
+tester on a physical Mac. The free alpha uses an ad-hoc macOS code signature,
+not Apple notarization, so macOS may require one explicit **Open Anyway**
+approval. Chatobby never changes Gatekeeper, quarantine, Full Disk Access, or
+other macOS security settings.
 
 ## Install from Obsidian
 
@@ -25,8 +32,9 @@ cannot install Chatobby.
 
 Chatobby downloads from this repository only after confirmation. It verifies
 the signed update descriptor, signed runtime manifest, and every packaged file
-before installing atomically under `%LOCALAPPDATA%\Chatobby\runtime`. It does
-not request administrator access or run a downloaded Windows installer.
+before installing atomically under `%LOCALAPPDATA%\Chatobby\runtime` on
+Windows or `~/Library/Application Support/Chatobby/runtime` on macOS. It does
+not request administrator access, use `sudo`, or run a standalone installer.
 
 After installation, Chatobby verifies the runtime package signature and every
 inventoried file before starting it. If the view was closed during the process,
@@ -43,7 +51,8 @@ runtime.
 ## Uninstall
 
 Remove the Chatobby connector from Obsidian. To remove the local runtime, close
-Obsidian and delete `%LOCALAPPDATA%\Chatobby\runtime`. Uninstallation
+Obsidian and delete `%LOCALAPPDATA%\Chatobby\runtime` on Windows or
+`~/Library/Application Support/Chatobby/runtime` on macOS. Uninstallation
 intentionally does not delete vault content, sessions, memory, credentials, or
 other user-owned Chatobby state. Use Chatobby's data controls and retain a
 backup before deleting local state manually.

@@ -3,14 +3,16 @@
 This repository distributes the proprietary local runtime used by the
 [Chatobby Obsidian connector](https://github.com/TitanicEclair/chatobby-obsidian).
 The runtime contains the model, tool, memory, permission, event, workflow, and
-multi-agent systems. It runs locally on Windows and communicates with the
-connector over authenticated loopback connections.
+multi-agent systems. It runs locally on Windows and macOS and communicates
+with the connector over authenticated loopback connections. macOS support is
+experimental and has not yet been verified by an external tester on a physical
+Mac.
 
 > **Public alpha:** Chatobby is unfinished pre-release software. Back up the
 > files and vaults you intend to use, begin with a copied test note, and grant
 > only the permissions required for your task.
 
-## Install on Windows
+## Install through Obsidian
 
 [![Install Chatobby in Obsidian](https://img.shields.io/badge/Install%20in-Obsidian-7C3AED?logo=obsidian&logoColor=white)](https://obsidian.md/plugins?id=chatobby)
 
@@ -31,8 +33,8 @@ not install Chatobby.
 5. Connect a model provider in **Settings → Chatobby**.
 
 The plugin downloads the signed runtime package only after confirmation,
-verifies it file-by-file, installs it for the current Windows account without
-administrator access, and reconnects the vault.
+verifies it file-by-file, installs it for the current operating-system account
+without administrator access, and reconnects the vault.
 
 The runtime executable is not launched as a downloaded installer. Chatobby
 verifies the Ed25519-signed update descriptor, signed package manifest, and
