@@ -21,6 +21,11 @@ Apple Silicon macOS, and Intel macOS. Runtime protocol revision 3 is retained.
   guidance loading from the active session directory.
 - Rejected stale Web Viewer references after page transitions so interactions
   must use the current page snapshot.
+- Kept private tool descriptions, workflow guidance, and registry metadata out
+  of deferred discovery results while preserving minimal invocation structure.
+- Added a current-information research policy that prefers recent primary
+  sources, corroborates consequential claims, and stops when the requested
+  outcome has adequate evidence.
 
 Each production package is verified through the signed multi-platform runtime
 index, its signed file inventory, SHA-256 hashes, SBOM, provenance, dependency
