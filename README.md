@@ -43,6 +43,15 @@ every packaged file before activating the update.
 
 See [INSTALL.md](INSTALL.md) for installation, update, and uninstall guidance.
 
+## Local model servers
+
+Chatobby can connect to a local model server that is already running. Optional
+managed llama.cpp profiles control only the local server process; a separate
+model connection tells Chatobby which endpoint and model a chat can use.
+Removing a connection therefore does not delete its managed profile or model
+file, and removing a managed profile does not silently remove an independent
+connection. Configure and test both from the Chatobby Settings page.
+
 ## Distribution and source
 
 The runtime is distributed as licensed object code and its source is not
