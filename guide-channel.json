@@ -3,7 +3,7 @@
   "product": "Chatobby Guide Channel",
   "channel": "stable",
   "minimumConnectorVersion": "0.5.0",
-  "maximumConnectorVersion": "0.5.0",
+  "maximumConnectorVersion": "0.5.1",
   "minimumConsumerSchemaVersion": 1,
   "maximumConsumerSchemaVersion": 1,
   "guide": {
@@ -17,5 +17,5 @@
     "fileCount": 12
   },
   "signatureAlgorithm": "ed25519",
-  "signature": "eqkoCYlhFnhL1XsyKdaxepQvwLVlDpgS8mvmxh5NrrhbDjnfFnwQuPIIT7H95vzRkBUQ5OzAM1/urw717vO5Bg=="
+  "signature": "XL32QAT0fv8cEt0isyqHlpx+lGMUNLBok/6X1Q+gm6bGNo938PmJMwFcKaoXjCfRIuv+9UBaFgFkiigFWBTfBQ=="
 }
