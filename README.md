@@ -45,12 +45,23 @@ See [INSTALL.md](INSTALL.md) for installation, update, and uninstall guidance.
 
 ## Local model servers
 
-Chatobby can connect to a local model server that is already running. Optional
-managed llama.cpp profiles control only the local server process; a separate
-model connection tells Chatobby which endpoint and model a chat can use.
-Removing a connection therefore does not delete its managed profile or model
-file, and removing a managed profile does not silently remove an independent
-connection. Configure and test both from the Chatobby Settings page.
+Connect a running Ollama, LM Studio, llama.cpp or compatible server from
+Chatobby's **Settings** page. Discover its models, test a connection and use
+reported context limits and server output defaults. Per-model overrides are
+available when needed. See the
+[local model setup guide](https://github.com/TitanicEclair/chatobby-obsidian/blob/main/docs/local-model-connections.md).
+
+## Workspace access
+
+Read-only and Workspace modes restrict file and shell work to the selected
+Vault or Project. Network access is controlled separately and starts On.
+Full uses the access available to your operating-system account. Windows can
+use compatible existing PowerShell installations.
+
+Obsidian app access is a separate permission: enabled app tools can operate
+across the Vault. Native child-process restrictions do not contain work already
+executing inside Obsidian. See the
+[0.5.0 release notes](RELEASE_NOTES_0.5.0.md).
 
 ## Distribution and source
 
@@ -61,7 +72,8 @@ third-party notices, SPDX SBOM, build provenance, checksums, and an
 Ed25519-signed package manifest. See [LICENSE.md](LICENSE.md) and
 [PRIVACY.md](PRIVACY.md).
 
-Chatobby is free during the public alpha. Optional
+The core Chatobby harness is free and will remain free. Model providers set
+their own subscription and API prices. Optional
 [Patreon support](https://www.patreon.com/cw/MadelynCruzTan/membership) does not
 unlock features, limits, priority support, or continued availability.
 

@@ -50,6 +50,14 @@ After installation, Chatobby verifies the runtime package signature and every
 inventoried file before starting it. If the view was closed during the process,
 reopen Chatobby and select **Check again**.
 
+## Add the Chatobby Guide
+
+In **Settings → Chatobby**, select **Add guide to vault**. Chatobby downloads
+the signed Guide, verifies its compatibility and contents, then asks before
+writing the 12 linked guide pages. The Guide covers connections, local models,
+Projects, permissions, memory, agents, Channels and Events. Updating it keeps
+unrelated notes intact.
+
 ## Update
 
 Obsidian updates the connector. When a compatible runtime update is available,
