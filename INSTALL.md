@@ -10,6 +10,10 @@ cannot install Chatobby.
 
 ## Requirements
 
+Version 0.5.3 runs with Full file, command and network access. Sandboxing is
+temporarily unavailable; saved Read-only, Workspace and Network choices are
+retained but inactive. Project memory and session-search filters remain active.
+
 - Windows 10 or 11 on x64 hardware, macOS 11 or newer on Apple Silicon or
   Intel hardware, or a glibc-based Linux desktop on x64 or arm64
 - Obsidian 1.11.4 or newer
