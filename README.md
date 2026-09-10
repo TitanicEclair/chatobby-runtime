@@ -8,9 +8,9 @@ communicates with the connector over authenticated loopback connections.
 macOS and Linux support are experimental and have not yet completed
 representative physical-device acceptance.
 
-> **Public alpha:** Chatobby is unfinished pre-release software. Back up the
-> files and vaults you intend to use, begin with a copied test note, and grant
-> only the permissions required for your task.
+> **0.5.3: Full access.** Sandboxing is temporarily unavailable. File, command
+> and network tools use your operating-system account's access, including
+> outside the current Vault or Project.
 
 ## Install through Obsidian
 
@@ -51,17 +51,16 @@ reported context limits and server output defaults. Per-model overrides are
 available when needed. See the
 [local model setup guide](https://github.com/TitanicEclair/chatobby-obsidian/blob/main/docs/local-model-connections.md).
 
-## Workspace access
+## Full access in 0.5.3
 
-Read-only and Workspace modes restrict file and shell work to the selected
-Vault or Project. Network access is controlled separately and starts On.
-Full uses the access available to your operating-system account. Windows can
-use compatible existing PowerShell installations.
+Read-only, Workspace and Network controls are temporarily hidden. Saved choices
+are retained but inactive. Windows can use compatible existing PowerShell
+installations; native sandbox setup is not required.
 
-Obsidian app access is a separate permission: enabled app tools can operate
-across the Vault. Native child-process restrictions do not contain work already
-executing inside Obsidian. See the
-[0.5.2 release notes](RELEASE_NOTES_0.5.2.md).
+Memory and session-search tools remain scoped to the current Project or Vault
+chat. These application query filters do not restrict file or shell access.
+Obsidian app access and enabled MCP tools remain separate choices. See the
+[0.5.3 release notes](RELEASE_NOTES_0.5.3.md).
 
 ## Distribution and source
 

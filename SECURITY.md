@@ -7,6 +7,11 @@ replaced or withdrawn when a security or integrity issue is found.
 
 ## Verify a download
 
+In 0.5.3, sandboxing is temporarily unavailable. File, shell and network tools
+use the operating-system account's access. Project memory and session-query
+filters are application behavior, not a filesystem security boundary. Separate
+Obsidian app-access and MCP tool choices remain available.
+
 Install and update through the Chatobby Community plugin. The connector
 downloads only from this repository and verifies the Ed25519 update signature,
 signed runtime manifest, and every inventoried file before use. A signature or
