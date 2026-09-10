@@ -61,7 +61,7 @@ use compatible existing PowerShell installations.
 Obsidian app access is a separate permission: enabled app tools can operate
 across the Vault. Native child-process restrictions do not contain work already
 executing inside Obsidian. See the
-[0.5.0 release notes](RELEASE_NOTES_0.5.0.md).
+[0.5.2 release notes](RELEASE_NOTES_0.5.2.md).
 
 ## Distribution and source
 

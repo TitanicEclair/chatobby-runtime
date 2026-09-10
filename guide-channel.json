@@ -3,19 +3,19 @@
   "product": "Chatobby Guide Channel",
   "channel": "stable",
   "minimumConnectorVersion": "0.5.0",
-  "maximumConnectorVersion": "0.5.1",
+  "maximumConnectorVersion": "0.5.2",
   "minimumConsumerSchemaVersion": 1,
   "maximumConsumerSchemaVersion": 1,
   "guide": {
     "schemaVersion": 2,
     "product": "Chatobby Guide",
-    "guideRevision": "2026-09-09.2",
+    "guideRevision": "2026-09-10.1",
     "format": "chatobby-guide-file-set-v1",
-    "file": "guides/chatobby-guide-2026-09-09.2.json",
-    "size": 44038,
-    "sha256": "4c31688a60ffe92689aa3f5a6cdb4067e4fb4d024ee466aba433ffce5e3aa3ad",
+    "file": "guides/chatobby-guide-2026-09-10.1.json",
+    "size": 44722,
+    "sha256": "8e55939d18ddcf65409793d5a7f48e5f782224bf68fcd50ccbfb25391e5de668",
     "fileCount": 12
   },
   "signatureAlgorithm": "ed25519",
-  "signature": "XL32QAT0fv8cEt0isyqHlpx+lGMUNLBok/6X1Q+gm6bGNo938PmJMwFcKaoXjCfRIuv+9UBaFgFkiigFWBTfBQ=="
+  "signature": "AiQHU+fTHQTbXtGJYIjQERMxx7QeQPh6n9asVRtISujAbAt4ZrRVsrqcbH+MB6Iqs6N/6IbhDseCwwnKxg5fBg=="
 }

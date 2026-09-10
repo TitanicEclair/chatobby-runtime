@@ -60,11 +60,13 @@ unrelated notes intact.
 
 ## Update
 
-Obsidian updates the connector. When a compatible runtime update is available,
-Chatobby shows **Update Chatobby** above the composer. Open the guide, review
-the release details, and confirm **Update**. The package is downloaded and
-installed only after that confirmation; Chatobby does not silently update the
-runtime.
+Obsidian updates the plugin. If the plugin and runtime versions differ,
+Chatobby shows both versions and an **Update** action beside the composer.
+Select **Update** to download, verify and install the matching runtime.
+
+Updating stops current work, including active subagents. Chats, Projects,
+memory and model connections are kept; interrupted agents do not restart
+automatically. Runtime updates are manual.
 
 ## Uninstall
 
