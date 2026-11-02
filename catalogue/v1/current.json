@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "contentSha256": "f7cee2ae841f44293696acb35b29ba9e8d0e46d679cdbc9b91f59d8629ae0780",
+  "contentSha256": "f7bd125e152e3c4b3841e2f1b9034ae5217acfb3ed7a2aff7627aaefc32b6461",
   "payload": {
     "schemaVersion": 2,
     "product": "Chatobby",
-    "generatedAt": "2026-11-02T19:52:15.055Z",
-    "expiresAt": "2026-11-09T19:52:15.055Z",
+    "generatedAt": "2026-11-02T19:57:45.264Z",
+    "expiresAt": "2026-11-09T19:57:45.264Z",
     "runtimeCompatibility": {
       "minimum": "0.5.3",
       "maximumExclusive": "0.5.4"
@@ -1934,7 +1934,7 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.054,
+          "input": 0.05,
           "output": 0.3,
           "cacheRead": 0.035,
           "cacheWrite": 0
@@ -2338,9 +2338,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.09,
-          "output": 0.3,
-          "cacheRead": 0.05,
+          "input": 0.0765,
+          "output": 0.255,
+          "cacheRead": 0.0425,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
@@ -2777,9 +2777,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.15,
-          "output": 0.6,
-          "cacheRead": 0.075,
+          "input": 0.021,
+          "output": 0.079,
+          "cacheRead": 0.019,
           "cacheWrite": 0
         },
         "contextWindow": 131072,
@@ -11747,6 +11747,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "catalogue-current",
-    "value": "3l9JRm4orhaIf5kzpEwmfOcGHAtp1y19D1aiO3pZAOY1lAw5kJEWHsAAjUfFExtYtw0vbzWa4ij+s0YLuH3FDA=="
+    "value": "DunD+i5n5CwA5+/Rv9AvKMOY9raHyW2YBgBvXLzS/+C6Axe8rYXbSB7rQp9g7nXIfpoWlHE3EDMr0ZENLzO/Dw=="
   }
 }
