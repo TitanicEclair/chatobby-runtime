@@ -1,0 +1,49 @@
+name: Public catalogue validation
+on:
+  pull_request_target:
+    types: [opened, synchronize, reopened, ready_for_review]
+permissions:
+  contents: read
+concurrency:
+  group: catalogue-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: false
+jobs:
+  validate:
+    name: trusted-catalogue-review
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      statuses: write
+    outputs:
+      eligible: ${{ steps.check.outputs.eligible }}
+      head: ${{ steps.check.outputs.head }}
+      number: ${{ steps.check.outputs.number }}
+    steps:
+      - uses: actions/checkout@93cb6efe18208431cddfb8368fd83d5badbf9bfd # v5.0.1
+        with:
+          ref: ${{ github.event.pull_request.base.sha }}
+          persist-credentials: false
+      - uses: actions/setup-node@39370e3970a6d050c480ffad4ff0ed4d3fdee5af # v4.1.0
+        with:
+          node-version: '22.21.1'
+      - name: Validate proposed data with trusted base code
+        id: check
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: node scripts/check-catalogue-pr.mjs
+  automatic-merge:
+    needs: validate
+    if: needs.validate.outputs.eligible == 'true' && vars.CHATOBBY_CATALOGUE_AUTOMATION_ENABLED == 'true' && !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - name: Queue exact data commit behind required checks and branch protection
+        env:
+          GH_TOKEN: ${{ github.token }}
+          HEAD: ${{ needs.validate.outputs.head }}
+          NUMBER: ${{ needs.validate.outputs.number }}
+        run: gh pr merge "$NUMBER" --repo TitanicEclair/chatobby-runtime --auto --merge --match-head-commit "$HEAD" --delete-branch

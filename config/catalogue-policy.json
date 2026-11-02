@@ -1,0 +1,5710 @@
+{
+  "schemaVersion": 1,
+  "baselineSourceRevision": "d9504ba1269f4b8161f406794d1ff819de7a2402",
+  "minimumRuntimeVersion": "0.5.3",
+  "maximumExclusiveRuntimeVersion": "0.5.4",
+  "keyId": "catalogue-current",
+  "publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMCowBQYDK2VwAyEAXgI3KG4yHFYJnjIP8uXbTL3JwBYdEQAyslTsAmoivl4=\n-----END PUBLIC KEY-----\n",
+  "publicKeySpkiSha256": "56260760c12216fb9da33367a174ea5202bad2280a90d49dc65bc50815ce21df",
+  "models": {
+    "amazon-bedrock/amazon.nova-2-lite-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/amazon.nova-lite-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/amazon.nova-micro-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/amazon.nova-pro-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/anthropic.claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-fable-5-1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-haiku-4-5-20251001-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-opus-4-1-20250805-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-opus-4-5-20251101-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-opus-4-6-v1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-sonnet-4-5-20250929-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/anthropic.claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-haiku-4-5-20251001-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-opus-4-6-v1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-sonnet-4-5-20250929-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/au.anthropic.claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/deepseek.r1-v1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/deepseek.v3-v1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/deepseek.v3.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-haiku-4-5-20251001-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-opus-4-5-20251101-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-opus-4-6-v1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-sonnet-4-5-20250929-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/eu.anthropic.claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-fable-5-1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-haiku-4-5-20251001-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-opus-4-5-20251101-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-opus-4-6-v1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-sonnet-4-5-20250929-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.anthropic.claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.openai.gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.openai.gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.openai.gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/global.xai.grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/google.gemma-3-27b-it": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/google.gemma-3-4b-it": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-haiku-4-5-20251001-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-sonnet-4-5-20250929-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/jp.anthropic.claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/meta.llama3-1-70b-instruct-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/meta.llama3-1-8b-instruct-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/meta.llama3-3-70b-instruct-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/meta.llama4-maverick-17b-instruct-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/meta.llama4-scout-17b-instruct-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/minimax.minimax-m2": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/minimax.minimax-m2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/minimax.minimax-m2.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/mistral.devstral-2-123b": [
+      "text-input"
+    ],
+    "amazon-bedrock/mistral.magistral-small-2509": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/mistral.ministral-3-14b-instruct": [
+      "text-input"
+    ],
+    "amazon-bedrock/mistral.ministral-3-3b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/mistral.ministral-3-8b-instruct": [
+      "text-input"
+    ],
+    "amazon-bedrock/mistral.mistral-large-3-675b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/mistral.pixtral-large-2502-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/mistral.voxtral-mini-3b-2507": [
+      "text-input"
+    ],
+    "amazon-bedrock/mistral.voxtral-small-24b-2507": [
+      "text-input"
+    ],
+    "amazon-bedrock/moonshot.kimi-k2-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/moonshotai.kimi-k2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/nvidia.nemotron-nano-12b-v2": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/nvidia.nemotron-nano-3-30b": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/nvidia.nemotron-nano-9b-v2": [
+      "text-input"
+    ],
+    "amazon-bedrock/nvidia.nemotron-super-3-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-oss-120b-1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-oss-20b-1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/openai.gpt-oss-safeguard-120b": [
+      "text-input"
+    ],
+    "amazon-bedrock/openai.gpt-oss-safeguard-20b": [
+      "text-input"
+    ],
+    "amazon-bedrock/qwen.qwen3-235b-a22b-2507-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/qwen.qwen3-32b-v1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/qwen.qwen3-coder-30b-a3b-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/qwen.qwen3-coder-480b-a35b-v1:0": [
+      "text-input"
+    ],
+    "amazon-bedrock/qwen.qwen3-coder-next": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/qwen.qwen3-next-80b-a3b": [
+      "text-input"
+    ],
+    "amazon-bedrock/qwen.qwen3-vl-235b-a22b": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/us.anthropic.claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-fable-5-1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-haiku-4-5-20251001-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-opus-4-1-20250805-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-opus-4-5-20251101-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-opus-4-6-v1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-sonnet-4-5-20250929-v1:0": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.anthropic.claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.deepseek.r1-v1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/us.meta.llama4-maverick-17b-instruct-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/us.meta.llama4-scout-17b-instruct-v1:0": [
+      "text-input",
+      "image-input"
+    ],
+    "amazon-bedrock/us.xai.grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/writer.palmyra-x4-v1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/writer.palmyra-x5-v1:0": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/xai.grok-4.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/xai.grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/zai.glm-4.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/zai.glm-4.7-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "amazon-bedrock/zai.glm-5": [
+      "text-input",
+      "reasoning"
+    ],
+    "ant-ling/Ling-2.6-1T": [
+      "text-input"
+    ],
+    "ant-ling/Ling-2.6-flash": [
+      "text-input"
+    ],
+    "ant-ling/Ring-2.6-1T": [
+      "text-input",
+      "reasoning"
+    ],
+    "anthropic/claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-fable-5-1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-haiku-4-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-haiku-4-5-20251001": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-opus-4-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-opus-4-5-20251101": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-opus-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-sonnet-4-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-sonnet-4-5-20250929": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "anthropic/claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-4": [
+      "text-input"
+    ],
+    "azure-openai-responses/gpt-4-turbo": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4.1": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4.1-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4.1-nano": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4o": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4o-2024-05-13": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4o-2024-08-06": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4o-2024-11-20": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-4o-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5-chat-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-5-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.1-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.1-codex-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.2-chat-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.2-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.3-chat-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "azure-openai-responses/gpt-5.3-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.3-codex-spark": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.4-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-6-astra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/gpt-realtime-2.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/o1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/o1-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/o3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/o3-mini": [
+      "text-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/o3-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "azure-openai-responses/o4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cerebras/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "cerebras/qwen-3.8-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-fable-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-haiku-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-opus-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-opus-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-opus-4.7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-opus-4.8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-sonnet-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-sonnet-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-4.1": [
+      "text-input",
+      "image-input"
+    ],
+    "cloudflare-ai-gateway/gpt-4.1-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "cloudflare-ai-gateway/gpt-4.1-nano": [
+      "text-input",
+      "image-input"
+    ],
+    "cloudflare-ai-gateway/gpt-4o": [
+      "text-input",
+      "image-input"
+    ],
+    "cloudflare-ai-gateway/gpt-4o-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "cloudflare-ai-gateway/gpt-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.4-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/o3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/o3-mini": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-ai-gateway/o4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/deepseek-ai/deepseek-v4-flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/deepseek-ai/deepseek-v4-pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/google/gemma-4-26b-a4b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/ibm-granite/granite-4.0-h-micro": [
+      "text-input"
+    ],
+    "cloudflare-workers-ai/@cf/meta/llama-3.3-70b-instruct-fp8-fast": [
+      "text-input"
+    ],
+    "cloudflare-workers-ai/@cf/meta/llama-4-scout-17b-16e-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "cloudflare-workers-ai/@cf/mistralai/mistral-small-3.1-24b-instruct": [
+      "text-input"
+    ],
+    "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/moonshotai/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/nvidia/nemotron-3-120b-a12b": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/openai/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/qwen/qwen3-30b-a3b-fp8": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/qwen/qwen3.8-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/zai-org/glm-4.7-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/zai-org/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/zai-org/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "cloudflare-workers-ai/@cf/zai-org/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "deepseek/deepseek-v4-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "deepseek/deepseek-v4-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/deepseek-v4-flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/deepseek-v4-flash-vision-exp": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/deepseek-v4-pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/glm-5p2": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/glm-5p3": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/glm-5p3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/inkling": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/kimi-k2p6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/kimi-k2p7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/minimax-m3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/muse-glimmer-30b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/nemotron-3-ultra-nvfp4": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/qwen3p7-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/qwen3p8-2p4t-a95b": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/models/qwen3p8-max": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/routers/glm-5p2-fast": [
+      "text-input",
+      "reasoning"
+    ],
+    "fireworks/accounts/fireworks/routers/kimi-k3-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-fable-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-haiku-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-opus-4.7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-opus-4.8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-sonnet-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gemini-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gemini-3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gemini-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gemini-3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.3-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/gpt-6-astra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/grok-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "github-copilot/mai-code-1-flash-picker": [
+      "text-input",
+      "reasoning"
+    ],
+    "github-copilot/mai-code-1.1-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/deep-research-max-preview-04-2026": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/deep-research-preview-04-2026": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-2.5-computer-use-preview-10-2025": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-2.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-2.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-2.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3-flash-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.1-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.1-flash-lite-image": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.1-flash-lite-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.1-flash-live-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.1-pro-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.1-pro-preview-customtools": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-flash-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemini-flash-lite-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemma-4-26b-a4b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google/gemma-4-31b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-2.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-2.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-2.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3-flash-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.1-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.1-pro-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.1-pro-preview-customtools": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-flash-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "google-vertex/gemini-flash-lite-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "groq/llama-3.1-8b-instant": [
+      "text-input"
+    ],
+    "groq/llama-3.3-70b-versatile": [
+      "text-input"
+    ],
+    "groq/openai/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "groq/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "groq/openai/gpt-oss-safeguard-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "groq/qwen/qwen3.6-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "groq/qwen/qwen3.8-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/MiniMaxAI/MiniMax-M2": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/MiniMaxAI/MiniMax-M2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/MiniMaxAI/MiniMax-M2.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/MiniMaxAI/MiniMax-M2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/MiniMaxAI/MiniMax-M3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen2.5-Coder-32B-Instruct": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-235B-A22B": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3-235B-A22B-Instruct-2507": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-235B-A22B-Thinking-2507": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3-30B-A3B": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3-32B": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3-Coder-30B-A3B-Instruct": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-Coder-480B-A35B-Instruct": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-Coder-Next": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-Next-80B-A3B-Instruct": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-Next-80B-A3B-Thinking": [
+      "text-input"
+    ],
+    "huggingface/Qwen/Qwen3-VL-235B-A22B-Instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "huggingface/Qwen/Qwen3-VL-235B-A22B-Thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.5-122B-A10B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.5-27B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.5-35B-A3B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.5-397B-A17B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.5-9B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.6-27B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.6-35B-A3B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.8-2.4T-A95B": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/Qwen/Qwen3.8-27B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/XiaomiMiMo/MiMo-V2-Flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/XiaomiMiMo/MiMo-V2.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/XiaomiMiMo/MiMo-V2.5-Pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-R1": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-R1-0528": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V3": [
+      "text-input"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V3-0324": [
+      "text-input"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V3.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V3.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V4-Flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V4-Flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V4-Flash-Vision-Exp": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V4-Pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/deepseek-ai/DeepSeek-V4-Pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/google/gemma-4-26B-A4B-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/google/gemma-4-31B-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/meta-llama/Llama-3.1-8B-Instruct": [
+      "text-input"
+    ],
+    "huggingface/meta-llama/Llama-3.3-70B-Instruct": [
+      "text-input"
+    ],
+    "huggingface/moonshotai/Kimi-K2-Instruct": [
+      "text-input"
+    ],
+    "huggingface/moonshotai/Kimi-K2-Instruct-0905": [
+      "text-input"
+    ],
+    "huggingface/moonshotai/Kimi-K2-Thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/moonshotai/Kimi-K2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/moonshotai/Kimi-K2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/moonshotai/Kimi-K2.7-Code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/moonshotai/Kimi-K3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/openai/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/stepfun-ai/Step-3.5-Flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/stepfun-ai/Step-3.7-Flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/tencent/Hy3": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/thinkingmachines/Inkling": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/thinkingmachines/Inkling-Small": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.5-Air": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.5V": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.6": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.6V-Flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-4.7-Flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-5": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-5.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "huggingface/zai-org/GLM-5.3-Flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "kimi-coding/k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "kimi-coding/k3-256k": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "kimi-coding/kimi-for-coding": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "kimi-coding/kimi-for-coding-highspeed": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "kimi-coding/kimi-k2-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "minimax/MiniMax-M2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "minimax/MiniMax-M2.7-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "minimax/MiniMax-M3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "minimax-cn/MiniMax-M2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "minimax-cn/MiniMax-M2.7-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "minimax-cn/MiniMax-M3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "mistral/codestral-latest": [
+      "text-input"
+    ],
+    "mistral/devstral-2512": [
+      "text-input"
+    ],
+    "mistral/devstral-latest": [
+      "text-input"
+    ],
+    "mistral/devstral-medium-2507": [
+      "text-input"
+    ],
+    "mistral/devstral-medium-latest": [
+      "text-input"
+    ],
+    "mistral/devstral-small-2505": [
+      "text-input"
+    ],
+    "mistral/devstral-small-2507": [
+      "text-input"
+    ],
+    "mistral/labs-devstral-small-2512": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/magistral-medium-latest": [
+      "text-input",
+      "reasoning"
+    ],
+    "mistral/magistral-small": [
+      "text-input",
+      "reasoning"
+    ],
+    "mistral/ministral-3b-latest": [
+      "text-input"
+    ],
+    "mistral/ministral-8b-latest": [
+      "text-input"
+    ],
+    "mistral/mistral-large-2411": [
+      "text-input"
+    ],
+    "mistral/mistral-large-2512": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/mistral-large-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/mistral-medium-2505": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/mistral-medium-2508": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/mistral-medium-2604": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "mistral/mistral-medium-3.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "mistral/mistral-medium-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "mistral/mistral-nemo": [
+      "text-input"
+    ],
+    "mistral/mistral-small-2506": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/mistral-small-2603": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "mistral/mistral-small-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "mistral/open-mistral-7b": [
+      "text-input"
+    ],
+    "mistral/open-mistral-nemo": [
+      "text-input"
+    ],
+    "mistral/open-mixtral-8x22b": [
+      "text-input"
+    ],
+    "mistral/open-mixtral-8x7b": [
+      "text-input"
+    ],
+    "mistral/pixtral-12b": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/pixtral-large-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "mistral/voxtral-small-latest": [
+      "text-input"
+    ],
+    "mistral/zai-glm-5-2": [
+      "text-input",
+      "reasoning"
+    ],
+    "moonshotai/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai/kimi-k2.7-code-highspeed": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai-cn/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai-cn/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai-cn/kimi-k2.7-code-highspeed": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "moonshotai-cn/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/deepseek-ai/deepseek-v4-flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/deepseek-ai/deepseek-v4-pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/google/gemma-3-12b-it": [
+      "text-input",
+      "image-input"
+    ],
+    "nvidia/google/gemma-3-4b-it": [
+      "text-input",
+      "image-input"
+    ],
+    "nvidia/meta/llama-3.2-11b-vision-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "nvidia/meta/llama-3.2-90b-vision-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "nvidia/meta/muse-glimmer-30b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/minimaxai/minimax-m3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/mistralai/mistral-7b-instruct-v0.3": [
+      "text-input"
+    ],
+    "nvidia/moonshotai/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/moonshotai/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/nvidia/cosmos-reason2-8b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/nvidia/llama-3.1-nemotron-70b-instruct": [
+      "text-input"
+    ],
+    "nvidia/nvidia/llama-3.1-nemotron-ultra-253b-v1": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "nvidia/nvidia/nemotron-3-super-120b-a12b": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/nvidia/nemotron-3-ultra-550b-a55b": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/nvidia/nemotron-3.5-lightning-30b-a3b": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "nvidia/poolside/laguna-xs-2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openai/gpt-4": [
+      "text-input"
+    ],
+    "openai/gpt-4-turbo": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4.1": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4.1-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4.1-nano": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4o": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4o-2024-05-13": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4o-2024-08-06": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4o-2024-11-20": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-4o-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5-chat-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-5-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.1-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.1-codex-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.2-chat-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.2-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.3-chat-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "openai/gpt-5.3-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.3-codex-spark": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.4-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-6-astra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/gpt-realtime-2.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/o1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/o1-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/o3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/o3-mini": [
+      "text-input",
+      "reasoning"
+    ],
+    "openai/o3-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai/o4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai-codex/gpt-5.3-codex-spark": [
+      "text-input",
+      "reasoning"
+    ],
+    "openai-codex/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai-codex/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openai-codex/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/big-pickle": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-fable-5-1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-haiku-4-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-opus-4-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-opus-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-opus-4-7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-opus-4-8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-sonnet-4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-sonnet-4-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-sonnet-4-6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/deepseek-v4-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/deepseek-v4-flash-vision-exp": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/deepseek-v4-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3.1-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gemini-3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/glm-5": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/glm-5.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.1-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.1-codex-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.1-codex-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.2-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.3-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.4-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/gpt-6-astra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/grok-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/grok-build-0.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/kimi-k2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/ling-3.0-flash-fin-free": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/mimo-v2.5-free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/minimax-m2.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/minimax-m2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/minimax-m3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/muse-spark-1.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/muse-spark-1.2-contributor-free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/muse-spark-1.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/muse-spark-1.3-contributor-free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/nemotron-3-ultra-free": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/nemotron-3.5-lightning-free": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode/qwen3.5-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode/qwen3.6-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/deepseek-v4-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/deepseek-v4-flash-vision-exp": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/deepseek-v4-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/glm-5.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/hy3": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/hy4-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/longcat-2.0": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/minimax-m2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/minimax-m3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/muse-spark-1.2-contributor": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/muse-spark-1.3-contributor": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/omen-alpha": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/qwen3.6-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/qwen3.7-max": [
+      "text-input",
+      "reasoning"
+    ],
+    "opencode-go/qwen3.7-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/qwen3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "opencode-go/qwen3.8-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/aion-labs/aion-2.0": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/aion-labs/aion-3.0": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/aion-labs/aion-3.0-mini": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/amazon/nova-2-lite-v1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/amazon/nova-lite-v1": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/amazon/nova-micro-v1": [
+      "text-input"
+    ],
+    "openrouter/amazon/nova-premier-v1": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/amazon/nova-pro-v1": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/anthropic/claude-3-haiku": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/anthropic/claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-fable-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-fable-5.1:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-fable-5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-haiku-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-haiku-4.5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.1:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.6:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.7:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-4.8:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-opus-5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-4.5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-4.6:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/anthropic/claude-sonnet-5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/arcee-ai/trinity-large-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/auto": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/bytedance-seed/seed-1.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/bytedance-seed/seed-1.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/bytedance-seed/seed-2-1-turbo": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/bytedance-seed/seed-2.0-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/bytedance-seed/seed-2.0-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/bytedance-seed/seed-2.0-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/cohere/command-r-08-2024": [
+      "text-input"
+    ],
+    "openrouter/cohere/command-r-plus-08-2024": [
+      "text-input"
+    ],
+    "openrouter/cohere/north-mini-code:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-chat": [
+      "text-input"
+    ],
+    "openrouter/deepseek/deepseek-chat-v3-0324": [
+      "text-input"
+    ],
+    "openrouter/deepseek/deepseek-chat-v3.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-r1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-r1-0528": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v3.1-terminus": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v3.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v3.2-exp": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-flash-0731:batch": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-flash-vision-exp": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/deepseek/deepseek-v4-pro-0813:batch": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/dots-studio/dots-3-note-preview:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-flash-lite:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-flash:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-pro-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-pro-preview-05-06": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-2.5-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3-flash-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3-flash-preview:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3-pro-image": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.1-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.1-flash-lite-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.1-flash-lite:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.1-pro-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.1-pro-preview-customtools": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.1-pro-preview:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.5-flash-lite:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.5-flash:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.6-flash:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.7-flash:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemini-3.8-flash:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemma-3-12b-it": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/google/gemma-3-27b-it": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/google/gemma-4-26b-a4b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemma-4-26b-a4b-it:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemma-4-31b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemma-4-31b-it:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/google/gemma-4-31b-it:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/ibm-granite/granite-4.2-8b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/inception/mercury-2": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/inception/mercury-2.5-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/inclusionai/ling-3.0-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/inclusionai/ling-3.0-flash-fin": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/inclusionai/ling-3.0-flash-fin:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/inclusionai/ling-3.0-flash-sante:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/kwaipilot/kat-coder-pro-v2": [
+      "text-input"
+    ],
+    "openrouter/kwaipilot/kat-coder-pro-v2.5": [
+      "text-input"
+    ],
+    "openrouter/liquid/lfm-2.5-2.6b:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/meituan/longcat-2.0": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/meta-llama/llama-3.1-70b-instruct": [
+      "text-input"
+    ],
+    "openrouter/meta-llama/llama-3.1-8b-instruct": [
+      "text-input"
+    ],
+    "openrouter/meta-llama/llama-3.3-70b-instruct": [
+      "text-input"
+    ],
+    "openrouter/meta-llama/llama-4-maverick": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/meta-llama/llama-4-scout": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/meta/muse-glimmer-30b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/meta/muse-glimmer-30b:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/meta/muse-spark-1.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/meta/muse-spark-1.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/meta/muse-spark-1.2-contributor": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/meta/muse-spark-1.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/meta/muse-spark-1.3-contributor": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m2": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m2.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m2.7:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m3:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/minimax/minimax-m3:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/mistralai/codestral-2508": [
+      "text-input"
+    ],
+    "openrouter/mistralai/devstral-2512": [
+      "text-input"
+    ],
+    "openrouter/mistralai/ministral-14b-2512": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/ministral-3b-2512": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/ministral-8b-2512": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/mistral-large": [
+      "text-input"
+    ],
+    "openrouter/mistralai/mistral-large-2407": [
+      "text-input"
+    ],
+    "openrouter/mistralai/mistral-large-2512": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/mistral-medium-3": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/mistral-medium-3-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/mistralai/mistral-medium-3-5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/mistralai/mistral-medium-3.1": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/mistral-nemo": [
+      "text-input"
+    ],
+    "openrouter/mistralai/mistral-saba": [
+      "text-input"
+    ],
+    "openrouter/mistralai/mistral-small-2603": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/mistralai/mistral-small-3.2-24b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/mistralai/mixtral-8x22b-instruct": [
+      "text-input"
+    ],
+    "openrouter/mistralai/voxtral-small-24b-2507": [
+      "text-input"
+    ],
+    "openrouter/moonshotai/kimi-k2": [
+      "text-input"
+    ],
+    "openrouter/moonshotai/kimi-k2-0905": [
+      "text-input"
+    ],
+    "openrouter/moonshotai/kimi-k2-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/moonshotai/kimi-k2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/moonshotai/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/moonshotai/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/moonshotai/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/moonshotai/kimi-k3:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/nex-agi/nex-n2-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/nex-agi/nex-n2-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3-nano-30b-a3b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3-super-120b-a12b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3-super-120b-a12b:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3-ultra-550b-a55b:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3.5-lightning": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/nvidia/nemotron-3.5-lightning:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-3.5-turbo": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-3.5-turbo-0613": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-3.5-turbo-16k": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-3.5-turbo:batch": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-4": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-4-turbo": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4-turbo-preview": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-4-turbo:batch": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4.1": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4.1-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4.1-mini:batch": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4.1-nano": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4.1-nano:batch": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4.1:batch": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o-2024-05-13": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o-2024-08-06": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o-2024-11-20": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o-mini-2024-07-18": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o-mini:batch": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-4o:batch": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5-mini:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5-nano:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.1-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.1-codex-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.1-codex-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.1:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.2-chat": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-5.2-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.2-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.2-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.2:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.3-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4-mini:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4-nano:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.4:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.5-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-luna-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-luna-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-luna:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-sol-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-sol-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-sol:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-terra-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-terra-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5.6-terra:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-5:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-6-astra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-6-astra-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-6-astra-pro:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-6-astra:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-audio": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-audio-mini": [
+      "text-input"
+    ],
+    "openrouter/openai/gpt-chat-latest": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/openai/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-oss-120b:batch": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/gpt-oss-safeguard-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o3-mini": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o3-mini-high": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o3-mini:batch": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o3-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o3:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o4-mini-high": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openai/o4-mini:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openrouter/auto": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openrouter/auto-beta": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openrouter/free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/openrouter/fusion": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/poolside/laguna-s-2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/poolside/laguna-s-2.1:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/poolside/laguna-xs-2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/poolside/laguna-xs-2.1:free": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen-2.5-72b-instruct": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen-2.5-7b-instruct": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen-plus": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen-plus-2025-07-28": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-14b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-235b-a22b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-235b-a22b-2507": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-235b-a22b-thinking-2507": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-30b-a3b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-30b-a3b-instruct-2507": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-30b-a3b-thinking-2507": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-32b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-8b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-coder": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-coder-30b-a3b-instruct": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-coder-flash": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-coder-next": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-coder-plus": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-max": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-max-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-next-80b-a3b-instruct": [
+      "text-input"
+    ],
+    "openrouter/qwen/qwen3-next-80b-a3b-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-vl-235b-a22b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/qwen/qwen3-vl-235b-a22b-thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-vl-30b-a3b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/qwen/qwen3-vl-30b-a3b-thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3-vl-32b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/qwen/qwen3-vl-8b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/qwen/qwen3-vl-8b-thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-122b-a10b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-35b-a3b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-397b-a17b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-9b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-9b:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-flash-02-23": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-plus-02-15": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.5-plus-20260420": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.6-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.6-35b-a3b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.6-max-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.6-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.7-max": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.7-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.8-2.4t-a95b": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.8-2.4t-a95b:batch": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.8-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/qwen/qwen3.8-max-0902": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/rekaai/reka-edge": [
+      "text-input",
+      "image-input"
+    ],
+    "openrouter/relace/relace-search": [
+      "text-input"
+    ],
+    "openrouter/sakana/fugu-ultra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/sakana/sakana-namazu": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/sao10k/l3.1-euryale-70b": [
+      "text-input"
+    ],
+    "openrouter/stepfun/step-3.5-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/stepfun/step-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/tencent/hy3": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/tencent/hy3-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/tencent/hy4-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/thedrummer/unslopnemo-12b": [
+      "text-input"
+    ],
+    "openrouter/thinkingmachines/inkling": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/thinkingmachines/inkling-small": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/thinkingmachines/inkling-small:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/thinkingmachines/inkling-small:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/thinkingmachines/inkling:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/thinkingmachines/inkling:free": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/upstage/solar-pro-3": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/upstage/solar-pro4": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/x-ai/grok-4.20": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/x-ai/grok-4.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/x-ai/grok-4.3:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/x-ai/grok-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/x-ai/grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/x-ai/grok-build-0.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/xiaomi/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/xiaomi/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.5-air": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.5v": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.6": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.6v": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-4.7-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5-turbo": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5.3-flash:batch": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/z-ai/glm-5v-turbo": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~anthropic/claude-fable-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~anthropic/claude-haiku-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~anthropic/claude-opus-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~anthropic/claude-sonnet-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~deepseek/deepseek-v4-flash-latest": [
+      "text-input",
+      "reasoning"
+    ],
+    "openrouter/~google/gemini-flash-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~google/gemini-pro-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~moonshotai/kimi-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~openai/gpt-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~openai/gpt-mini-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~x-ai/grok-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~z-ai/glm-flash-latest": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "openrouter/~z-ai/glm-latest": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/MiniMaxAI/MiniMax-M2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/MiniMaxAI/MiniMax-M3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "together/Qwen/Qwen2.5-7B-Instruct-Turbo": [
+      "text-input"
+    ],
+    "together/Qwen/Qwen3.5-9B": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "together/Qwen/Qwen3.6-Plus": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/Qwen/Qwen3.7-Max": [
+      "text-input"
+    ],
+    "together/deepseek-ai/DeepSeek-V4-Flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/deepseek-ai/DeepSeek-V4-Pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/deepseek-ai/DeepSeek-V4-Pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/google/gemma-4-31B-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "together/meta-llama/Llama-3.3-70B-Instruct-Turbo": [
+      "text-input"
+    ],
+    "together/moonshotai/Kimi-K2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "together/moonshotai/Kimi-K2.7-Code": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/moonshotai/Kimi-K3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "together/nvidia/nemotron-3-ultra-550b-a55b": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/openai/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/thinkingmachines/Inkling": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "together/zai-org/GLM-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/zai-org/GLM-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "together/zai-org/GLM-5.3-Flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen-3-14b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen-3-235b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen-3-30b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen-3-32b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen-3.6-max-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-235b-a22b-thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-coder": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-coder-30b-a3b": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-coder-next": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-coder-plus": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-max": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-max-preview": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-max-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-next-80b-a3b-instruct": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-next-80b-a3b-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-vl-235b-a22b-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-vl-instruct": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3-vl-thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.5-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.6-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.6-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.7-max": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.7-plus": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.8-2.4t-a95b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.8-27b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.8-flash-next": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.8-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/alibaba/qwen3.8-max-0902": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/amazon/nova-2-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/amazon/nova-lite": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/amazon/nova-micro": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/amazon/nova-pro": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/anthropic/claude-3-haiku": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/anthropic/claude-fable-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-fable-5.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-haiku-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-4.7": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-4.8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-4.8-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-opus-5-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-sonnet-4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-sonnet-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-sonnet-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/anthropic/claude-sonnet-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/arcee-ai/trinity-large-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/bytedance/seed-1.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/bytedance/seed-1.8": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/cohere/command-a": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-r1": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v3.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v3.1-terminus": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v3.2": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v3.2-thinking": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v4-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v4-flash-0731": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v4-flash-vision-exp": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v4-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/deepseek/deepseek-v4-pro-0813": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-2.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-2.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-2.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.1-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.1-pro-preview": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.5-flash-lite": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.6-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemini-3.8-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemma-4-26b-a4b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/google/gemma-4-31b-it": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/inception/mercury-2": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/inception/mercury-coder-small": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash-fin": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash-fin-free": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash-sante": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/inclusionai/ling-3.0-flash-sante-free": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/interfaze/interfaze-beta": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/kwaipilot/kat-coder-air-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/kwaipilot/kat-coder-pro-v1": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/kwaipilot/kat-coder-pro-v2": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/kwaipilot/kat-coder-pro-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/meta/llama-3.1-70b": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/meta/llama-3.1-8b": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/meta/llama-3.3-70b": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/meta/llama-4-maverick": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/meta/llama-4-scout": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/meta/muse-glimmer-30b": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/meta/muse-spark-1.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/meta/muse-spark-1.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/meta/muse-spark-1.2-contributor": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/meta/muse-spark-1.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/meta/muse-spark-1.3-contributor": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2.1-lightning": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2.5-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m2.7-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/minimax/minimax-m3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/mistral/codestral": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/mistral/devstral-2": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/mistral/devstral-small-2": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/ministral-14b": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/ministral-3b": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/ministral-8b": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/mistral-large-3": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/mistral-medium": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/mistral-medium-3.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/mistral/mistral-nemo": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/mistral-small": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/mistral/pixtral-12b": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k2": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k2-thinking": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k2.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k2.7-code": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k2.7-code-highspeed": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/moonshotai/kimi-k3-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/nvidia/nemotron-3-nano-30b-a3b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/nvidia/nemotron-3-super-120b-a12b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/nvidia/nemotron-3-ultra-550b-a55b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/nvidia/nemotron-3.5-lightning": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/nvidia/nemotron-nano-12b-v2-vl": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/nvidia/nemotron-nano-9b-v2": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-3.5-turbo": [
+      "text-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4-turbo": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4.1": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4.1-fast": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4.1-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4.1-mini-fast": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4.1-nano": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4.1-nano-fast": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4o": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4o-fast": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4o-mini": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-4o-mini-fast": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/openai/gpt-5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5-mini-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.1-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.1-codex-max": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.1-codex-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.1-thinking": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.1-thinking-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.2": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.2-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.2-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.2-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.3-codex": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.3-codex-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.4": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.4-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.4-mini-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.4-nano": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.4-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.5-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.5-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.6-luna": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.6-luna-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.6-sol": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.6-sol-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.6-terra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-5.6-terra-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-6-astra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-6-astra-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-oss-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-oss-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-oss-safeguard-120b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/gpt-oss-safeguard-20b": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o3-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o3-mini": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o3-pro": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o4-mini": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/openai/o4-mini-fast": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/poolside/laguna-s-2.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/poolside/laguna-s-2.1-free": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/sakana/fugu-ultra": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/sakana/namazu": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.1-fast-non-reasoning": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.1-fast-reasoning": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.20-multi-agent": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.20-multi-agent-beta": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.20-non-reasoning": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.20-non-reasoning-beta": [
+      "text-input",
+      "image-input"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.20-reasoning": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.20-reasoning-beta": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/spacexai/grok-build-0.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/stepfun/step-3.5-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/stepfun/step-3.7-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/tencent/hy3": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/tencent/hy4-preview": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/thinkingmachines/inkling": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/thinkingmachines/inkling-small": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/xiaomi/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/xiaomi/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/xiaomi/mimo-v2.5-pro-ultraspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.5": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.5-air": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.5v": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.6": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.7-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-4.7-flashx": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5-turbo": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.1": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.2-fast": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.3-fast": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5.3-promo-50": [
+      "text-input",
+      "reasoning"
+    ],
+    "vercel-ai-gateway/zai/glm-5v-turbo": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xai/grok-3": [
+      "text-input"
+    ],
+    "xai/grok-3-fast": [
+      "text-input"
+    ],
+    "xai/grok-4.20-0309-non-reasoning": [
+      "text-input",
+      "image-input"
+    ],
+    "xai/grok-4.20-0309-reasoning": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xai/grok-4.3": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xai/grok-4.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xai/grok-4.6": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xai/grok-build-0.1": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xai/grok-code-fast-1": [
+      "text-input"
+    ],
+    "xiaomi/mimo-v2-flash": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi/mimo-v2-omni": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi/mimo-v2-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi/mimo-v2.5-pro-ultraspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-ams/mimo-v2-omni": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-ams/mimo-v2-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-ams/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-ams/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-ams/mimo-v2.5-pro-ultraspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-cn/mimo-v2-omni": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-cn/mimo-v2-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-cn/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-cn/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-cn/mimo-v2.5-pro-ultraspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-sgp/mimo-v2-omni": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-sgp/mimo-v2-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-sgp/mimo-v2.5": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-sgp/mimo-v2.5-pro": [
+      "text-input",
+      "reasoning"
+    ],
+    "xiaomi-token-plan-sgp/mimo-v2.5-pro-ultraspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai/glm-4.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai/glm-5-turbo": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai/glm-5.2-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "zai/glm-5.3-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-4.7": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-5-turbo": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-5.2": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-5.2-highspeed": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-5.3": [
+      "text-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-5.3-flash": [
+      "text-input",
+      "image-input",
+      "reasoning"
+    ],
+    "zai-coding-cn/glm-5.3-highspeed": [
+      "text-input",
+      "reasoning"
+    ]
+  }
+}
