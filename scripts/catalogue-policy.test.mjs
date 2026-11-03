@@ -39,3 +39,39 @@ test("monitor bounds responses and distinguishes initial activation hold from en
   const expected = { repository: "example/repo", tag: "0.5.3", assets: [{ name: "asset", size: 1, digest: "sha256:abc" }] };
   assert.throws(() => checkReleaseInventory({ tag_name: "0.5.3", assets: [{ name: "asset", size: 2, digest: "sha256:abc" }] }, expected), /changed/);
 });
+
+test("public review validates additions against every released consumer, including already-bundled targets", () => {
+  const sharedPolicy = { ...policy, maximumExclusiveRuntimeVersion: "0.5.5", compatibilityBaselines: [{ runtimeVersion: "0.5.4", sourceRevision: "a".repeat(40), models: { "example/base": ["text-input"] } }] };
+  const signed = envelope({ runtimeCompatibility: { minimum: "0.5.3", maximumExclusive: "0.5.5" } });
+  assert.equal(validateCatalogue(signed, sharedPolicy, now).operations, 1);
+  sharedPolicy.compatibilityBaselines[0].models = { "example/new": ["text-input"] };
+  // Missing old template is allowed only because the new runtime bundles the target.
+  assert.equal(validateCatalogue(signed, sharedPolicy, now).operations, 1);
+  sharedPolicy.compatibilityBaselines[0].models = {};
+  assert.throws(() => validateCatalogue(signed, sharedPolicy, now), /not eligible in released runtime 0\.5\.4/);
+  assert.throws(() => validateCatalogue(signed, { ...sharedPolicy, models: { ...policy.models, "example/new": ["text-input"] } }, now), /not eligible in the released baseline/);
+});
+
+test("public review rejects updates missing in a newer runtime and either form of capability expansion", () => {
+  const sharedPolicy = { ...policy, maximumExclusiveRuntimeVersion: "0.5.5", models: { "example/base": ["text-input", "image-input"] },
+    compatibilityBaselines: [{ runtimeVersion: "0.5.4", sourceRevision: "a".repeat(40), models: {} }] };
+  const { templateModelId, ...fields } = operation;
+  const update = { ...fields, type: "model.update", modelId: "base" };
+  const signed = operations => envelope({ runtimeCompatibility: { minimum: "0.5.3", maximumExclusive: "0.5.5" }, operations });
+  assert.throws(() => validateCatalogue(signed([update]), sharedPolicy, now), /not eligible in released runtime 0\.5\.4/);
+  sharedPolicy.compatibilityBaselines[0].models = { "example/base": ["text-input"] };
+  assert.equal(validateCatalogue(signed([update]), sharedPolicy, now).operations, 1);
+  assert.throws(() => validateCatalogue(signed([{ ...update, capabilityIds: ["text-input", "image-input"] }]), sharedPolicy, now), /capability in released runtime 0\.5\.4/);
+  assert.throws(() => validateCatalogue(signed([{ ...operation, capabilityIds: ["text-input", "image-input"] }]), sharedPolicy, now), /capability in released runtime 0\.5\.4/);
+  sharedPolicy.compatibilityBaselines[0].models = { "example/base": ["text-input", "image-input"], "example/new": ["text-input"] };
+  assert.throws(() => validateCatalogue(signed([{ ...operation, capabilityIds: ["text-input", "image-input"] }]), sharedPolicy, now), /capability in released runtime 0\.5\.4/);
+});
+
+test("released compatibility policies require unique pinned identities inside the signed range", () => {
+  const signed = envelope({ runtimeCompatibility: { minimum: "0.5.3", maximumExclusive: "0.5.5" } });
+  const entry = { runtimeVersion: "0.5.4", sourceRevision: "a".repeat(40), models: policy.models };
+  const sharedPolicy = { ...policy, maximumExclusiveRuntimeVersion: "0.5.5" };
+  for (const compatibilityBaselines of [null, {}, [entry, entry], [{ ...entry, sourceRevision: "main" }], [{ ...entry, runtimeVersion: "0.5.5" }]]) {
+    assert.throws(() => validateCatalogue(signed, { ...sharedPolicy, compatibilityBaselines }, now));
+  }
+});
