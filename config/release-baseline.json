@@ -2,153 +2,153 @@
   "schemaVersion": 1,
   "runtime": {
     "repository": "TitanicEclair/chatobby-runtime",
-    "expectedVersion": "0.5.3",
-    "tag": "0.5.3",
-    "version": "0.5.3",
-    "url": "https://github.com/TitanicEclair/chatobby-runtime/releases/tag/0.5.3",
-    "publishedAt": "2026-09-10T10:34:22Z",
+    "expectedVersion": "0.5.4",
+    "tag": "0.5.4",
+    "version": "0.5.4",
+    "url": "https://github.com/TitanicEclair/chatobby-runtime/releases/tag/0.5.4",
+    "publishedAt": "2026-11-03T09:24:26Z",
     "assets": [
       {
         "name": "ALPHA-RISKS.txt",
-        "size": 1746,
-        "digest": "sha256:b16a8cec29409ec1c7bbcb1558cb395b4fb86afacea32dcbb537fc7c0ef5bad6",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "size": 1851,
+        "digest": "sha256:22c6eadc42baee9147ce6bcf8921e620db9154e1e792880f3c06a0033cea91e2",
+        "updatedAt": "2026-11-03T09:24:16Z"
       },
       {
         "name": "build-provenance.json",
-        "size": 456,
-        "digest": "sha256:7fa4dd171a263f21c7d8e7a82fb6ae00c73da61367964e37213ee4eec3e83a65",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "size": 647,
+        "digest": "sha256:517f5a619af964c6c2daa63eb53ca6b6da988e6d799dc7bf0cfad2d813f4a727",
+        "updatedAt": "2026-11-03T09:24:18Z"
       },
       {
-        "name": "chatobby-guide-0.5.3.json",
-        "size": 42515,
-        "digest": "sha256:846b735c3adb4b5159a1d147b05b51dd60c5fd81b8b45bc43f9d708125fcbde4",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "name": "chatobby-guide-0.5.4.json",
+        "size": 46807,
+        "digest": "sha256:df98a8e59045645d6d779e497d02e2319a2eabb71950583bf44c90f86ad6e542",
+        "updatedAt": "2026-11-03T09:24:02Z"
       },
       {
-        "name": "chatobby-runtime-0.5.3-darwin-arm64.cbr.gz",
-        "size": 71647948,
-        "digest": "sha256:549bc6f1b964bb60a31bf437eaa96c192f90fc9e7d7bcdbddfc13c2c5e80b422",
-        "updatedAt": "2026-09-10T10:34:15Z"
+        "name": "chatobby-runtime-0.5.4-darwin-arm64.cbr.gz",
+        "size": 71103183,
+        "digest": "sha256:6622e470bb2a6d65fabff4170f332dbb928d2b9998665abcbbbe99c20c1d5864",
+        "updatedAt": "2026-11-03T09:23:41Z"
       },
       {
-        "name": "chatobby-runtime-0.5.3-darwin-x64.cbr.gz",
-        "size": 72690323,
-        "digest": "sha256:b111875a733d54c7558a82ec9a00faf5f5fa72edf7cf561523a5634bcebad9e3",
-        "updatedAt": "2026-09-10T10:34:17Z"
+        "name": "chatobby-runtime-0.5.4-darwin-x64.cbr.gz",
+        "size": 72141433,
+        "digest": "sha256:2eb51901fb03bab9459dbf5e57b3547454294a29f5079414a03a9e988d513212",
+        "updatedAt": "2026-11-03T09:23:23Z"
       },
       {
-        "name": "chatobby-runtime-0.5.3-linux-arm64.cbr.gz",
-        "size": 77059960,
-        "digest": "sha256:0d96e3992250f81d2e5fefb4fcc3716b784aaa7c0b1dd9db6b243163e3d458cf",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "name": "chatobby-runtime-0.5.4-linux-arm64.cbr.gz",
+        "size": 76532442,
+        "digest": "sha256:e66ae4f427fa7705eb8d4ffcfaa46f5551f398dbe828537a42b3e8615bbff8cf",
+        "updatedAt": "2026-11-03T09:22:46Z"
       },
       {
-        "name": "chatobby-runtime-0.5.3-linux-x64.cbr.gz",
-        "size": 76904469,
-        "digest": "sha256:d129d25ce448bb25f054f92ae024f656dfb3848c1bb6e92a0fd62c5a580f53f7",
-        "updatedAt": "2026-09-10T10:34:22Z"
+        "name": "chatobby-runtime-0.5.4-linux-x64.cbr.gz",
+        "size": 76374519,
+        "digest": "sha256:992568d598e974d9f9b1bac7ecec4c4aea14afa528c937343b431d1750e2f8cd",
+        "updatedAt": "2026-11-03T09:23:04Z"
       },
       {
-        "name": "chatobby-runtime-0.5.3-win32-x64.cbr.gz",
-        "size": 69351644,
-        "digest": "sha256:209de66f7407235a01a5dd1e395a3045e2c128564ce8507ccf4f71ef972eb3ca",
-        "updatedAt": "2026-09-10T10:34:17Z"
+        "name": "chatobby-runtime-0.5.4-win32-x64.cbr.gz",
+        "size": 68821366,
+        "digest": "sha256:055fc5a4cc232d5cf05992ce11bc896eaca0deb738048ec56ae4e9c9002d5a12",
+        "updatedAt": "2026-11-03T09:23:58Z"
       },
       {
         "name": "CHATOBBY-RUNTIME-LICENSE.txt",
         "size": 4466,
-        "digest": "sha256:80330833244c0acaff2e2c1b49baf3694a420ac9593ac5439a02574a88a1be29",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "digest": "sha256:9b3336d1dc9a227f211642f35b07d24d596f8dc7e1e5e76d40ac0d69501a947b",
+        "updatedAt": "2026-11-03T09:24:09Z"
       },
       {
         "name": "checksums.txt",
-        "size": 17981,
-        "digest": "sha256:d7de7cbbbce18c5444adecca9f65f89bada7723497b2c5f818d21eeb062b697e",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "size": 20925,
+        "digest": "sha256:1a695eafd941c6283fa9da7b882fd2edfa48490033a0088420f8f7d65f26ba72",
+        "updatedAt": "2026-11-03T09:24:07Z"
       },
       {
         "name": "PRIVACY-AND-DATA-FLOW-NOTICE.txt",
-        "size": 3549,
-        "digest": "sha256:f7fb84e3962f2469c07a00c4126b3d9d65beddf62c79f16c751ce501181448e5",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "size": 3805,
+        "digest": "sha256:0135ab271da6bcceccfd82f244fb66903703dd5c17192384e3c02317e1756945",
+        "updatedAt": "2026-11-03T09:24:11Z"
       },
       {
         "name": "README-FIRST.txt",
-        "size": 1836,
-        "digest": "sha256:7859cb0cc3beea3c46c1bdef4a032ba3029d7357b4418b5af8eeb4a5d2cb576e",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "size": 2416,
+        "digest": "sha256:bac3ba6e98ccbd1395d9fd046ef7ab4a2edae596856e152f4ac307a4a682c6f5",
+        "updatedAt": "2026-11-03T09:24:14Z"
       },
       {
         "name": "release-descriptor.json",
         "size": 400,
-        "digest": "sha256:3990ba11d93f63bbfe6768ef6dfd734b2b51a7ba37d8714ce3da7b91d6c511e3",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "digest": "sha256:5b3d3888d05b57001ce0d24cc325b207de4eec7ead621ac91226b99dada81816",
+        "updatedAt": "2026-11-03T09:24:22Z"
       },
       {
         "name": "runtime-ed25519-public.pem",
         "size": 113,
         "digest": "sha256:8ada01d4dd92a854af7900f83113c397c35d872adcb46e35c1edb835dfcdddc3",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "updatedAt": "2026-11-03T09:24:23Z"
       },
       {
         "name": "runtime-index.json",
         "size": 2551,
-        "digest": "sha256:4691b6c0b036c5fbe3a6b9d93342dbf6fa71ade73501283511c20765a5bf8c11",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "digest": "sha256:bedc570b18a3a418691107c4fb448f9ff90c45ffcbf54889f948aa867ea44673",
+        "updatedAt": "2026-11-03T09:24:13Z"
       },
       {
         "name": "runtime-update.json",
         "size": 635,
-        "digest": "sha256:cff9433df1cce8aa8e78b772c99198c5eaf7155df96ba8128dc5deedaed5b7e6",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "digest": "sha256:c7a7e6a86f190fe684ef22092192db6b53fcbbf2a1d945ae6f1794b33fe9f8cc",
+        "updatedAt": "2026-11-03T09:24:20Z"
       },
       {
         "name": "runtime.manifest.json",
-        "size": 34089,
-        "digest": "sha256:1f7b4ff3469251319a29b4221707659817cd93de886b21e3b28c3f979efa4b82",
-        "updatedAt": "2026-09-10T10:34:20Z"
+        "size": 35049,
+        "digest": "sha256:f1d15c7968f4a819d07133e110685627440063afb072370f43727e9a28b8fe9a",
+        "updatedAt": "2026-11-03T09:24:04Z"
       },
       {
         "name": "sbom.spdx.json",
-        "size": 93822,
-        "digest": "sha256:99b56c9da07648883e39739f60606478416ced4fb2c3bc105ab750f22113b605",
-        "updatedAt": "2026-09-10T10:34:21Z"
+        "size": 141539,
+        "digest": "sha256:b72cedf8b220c8a957da0823adff7d40196e1df6d3354f1c70507b3fb1bcc3f0",
+        "updatedAt": "2026-11-03T09:24:00Z"
       },
       {
         "name": "THIRD_PARTY_NOTICES.txt",
-        "size": 9263,
-        "digest": "sha256:ec01e20e11f7f91de2bd71f41d623acd058084f151bcb831fc540e4d16a3da29",
-        "updatedAt": "2026-09-10T10:32:22Z"
+        "size": 21986,
+        "digest": "sha256:bb86bb5d6ad2dac1dcea6058d24f404874866505be3b8dbd7dc4cade02e890c8",
+        "updatedAt": "2026-11-03T09:24:06Z"
       }
     ]
   },
   "connector": {
     "repository": "TitanicEclair/chatobby-obsidian",
-    "expectedVersion": "0.5.3",
-    "tag": "0.5.3",
-    "version": "0.5.3",
-    "url": "https://github.com/TitanicEclair/chatobby-obsidian/releases/tag/0.5.3",
-    "publishedAt": "2026-09-10T10:40:15Z",
+    "expectedVersion": "0.5.4",
+    "tag": "0.5.4",
+    "version": "0.5.4",
+    "url": "https://github.com/TitanicEclair/chatobby-obsidian/releases/tag/0.5.4",
+    "publishedAt": "2026-11-03T09:30:03Z",
     "assets": [
       {
         "name": "main.js",
-        "size": 1050442,
-        "digest": "sha256:6bdfa8e25046fc36fc831902c86a972391d18c5ceff31d9508200d152e9fdefe",
-        "updatedAt": "2026-09-10T10:40:15Z"
+        "size": 1073760,
+        "digest": "sha256:f82edf01ce0fa5f9cc492b53ea6a16b2887b3dcea54b23dc1a0059fdf01f2702",
+        "updatedAt": "2026-11-03T09:30:03Z"
       },
       {
         "name": "manifest.json",
         "size": 444,
-        "digest": "sha256:c0fc22f23dcf0e2aa2500b3e756d05cec0979e5d392f3a6afbaacef8ed8c7db5",
-        "updatedAt": "2026-09-10T10:40:15Z"
+        "digest": "sha256:7f98c5c73f25028208be6a73d29a7887e159552a29f50c97df5348ec0265d7b7",
+        "updatedAt": "2026-11-03T09:30:03Z"
       },
       {
         "name": "styles.css",
-        "size": 206355,
-        "digest": "sha256:596c2809bdc39a33dad2fa9cb120eca9e4638124e2c48264e18b7765a13a686d",
-        "updatedAt": "2026-09-10T10:40:15Z"
+        "size": 205275,
+        "digest": "sha256:48268922adf92077528b5ae83bf16a5baaca301e35a80f82d906f4fe66cfaf9a",
+        "updatedAt": "2026-11-03T09:30:03Z"
       }
     ]
   }

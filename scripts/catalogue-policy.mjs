@@ -12,6 +12,36 @@ function text(value, limit, label) { if (typeof value !== "string" || !value.len
 function modelId(value) {
   if (typeof value !== "string" || !/^[A-Za-z0-9@~][A-Za-z0-9@~./:-]{0,255}$/.test(value) || /^[A-Za-z]:/.test(value) || value.split("/").some(part => !part || part === "." || part === "..")) throw new Error("Invalid model identity grammar");
 }
+
+function versionParts(value) {
+  if (typeof value !== "string" || !/^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)$/.test(value)) throw new Error(`Expected stable semantic version: ${value}`);
+  const parts = value.split(".").map(Number);
+  if (!parts.every(Number.isSafeInteger)) throw new Error(`Version component exceeds safe integer range: ${value}`);
+  return parts;
+}
+
+export function checkCatalogueCompatibility(compatibility, runtimeVersion) {
+  const runtime = versionParts(runtimeVersion), minimum = versionParts(compatibility.minimum), maximum = versionParts(compatibility.maximumExclusive);
+  const compare = (a, b) => a[0] - b[0] || a[1] - b[1] || a[2] - b[2];
+  if (compare(minimum, maximum) >= 0 || compare(runtime, minimum) < 0 || compare(runtime, maximum) >= 0) {
+    throw new Error(`Catalogue incompatible with runtime ${runtimeVersion}; supported range >=${compatibility.minimum} <${compatibility.maximumExclusive}`);
+  }
+}
+
+function compatibilityBaselines(policy) {
+  const baselines = policy.compatibilityBaselines === undefined ? [] : policy.compatibilityBaselines;
+  if (!Array.isArray(baselines)) throw new Error("Expected released compatibility baseline array");
+  const versions = new Set(), revisions = new Set();
+  for (const baseline of baselines) {
+    record(baseline, ["runtimeVersion", "sourceRevision", "models"], "released compatibility baseline");
+    if (typeof baseline.sourceRevision !== "string" || !/^[a-f0-9]{40}$/.test(baseline.sourceRevision) || !baseline.models || typeof baseline.models !== "object" || Array.isArray(baseline.models)) throw new Error("Invalid released compatibility baseline");
+    if (versions.has(baseline.runtimeVersion) || revisions.has(baseline.sourceRevision)) throw new Error("Duplicate released compatibility baseline");
+    versions.add(baseline.runtimeVersion); revisions.add(baseline.sourceRevision);
+    checkCatalogueCompatibility({ minimum: policy.minimumRuntimeVersion, maximumExclusive: policy.maximumExclusiveRuntimeVersion }, baseline.runtimeVersion);
+  }
+  return baselines;
+}
+
 export function validateCatalogue(value, policy, now = new Date()) {
   record(value, ["schemaVersion", "contentSha256", "payload", "signature"], "envelope");
   record(value.signature, ["algorithm", "keyId", "value"], "signature");
@@ -27,6 +57,7 @@ export function validateCatalogue(value, policy, now = new Date()) {
   const fingerprint = createHash("sha256").update(key.export({ type: "spki", format: "der" })).digest("hex");
   if (fingerprint !== policy.publicKeySpkiSha256 || createHash("sha256").update(bytes).digest("hex") !== value.contentSha256 || typeof signature.value !== "string" || !/^[A-Za-z0-9+/]{86}==$/.test(signature.value) || !verify(null, bytes, key, Buffer.from(signature.value, "base64"))) throw new Error("Catalogue trust or signature mismatch");
   if (!Array.isArray(payload.operations) || payload.operations.length > 4096) throw new Error("Operation bound exceeded");
+  const releasedBaselines = compatibilityBaselines(policy);
   const targets = new Set();
   for (const operation of payload.operations) {
     if (!["model.update", "model.add"].includes(operation.type)) throw new Error("Provider and retirement operations require explicit review");
@@ -40,6 +71,17 @@ export function validateCatalogue(value, policy, now = new Date()) {
     const ceiling = policy.models[`${operation.providerId}/${operation.type === "model.add" ? operation.templateModelId : operation.modelId}`];
     if (!ceiling || (operation.type === "model.add" && bundled)) throw new Error("Model or template is not eligible in the released baseline");
     if (!Array.isArray(operation.capabilityIds) || !operation.capabilityIds.includes("text-input") || new Set(operation.capabilityIds).size !== operation.capabilityIds.length || operation.capabilityIds.some(capability => !ceiling.includes(capability))) throw new Error("Unsupported model capability");
+    for (const released of releasedBaselines) {
+      // A newer consumer may already bundle an older catalogue addition. Match
+      // the released evaluator: keep that target's own execution metadata and
+      // ceiling; consult the named template only when the target is absent.
+      const target = released.models[identity];
+      const releasedCeiling = operation.type === "model.add" && !target
+        ? released.models[`${operation.providerId}/${operation.templateModelId}`]
+        : target;
+      if (!Array.isArray(releasedCeiling)) throw new Error(`Model or template is not eligible in released runtime ${released.runtimeVersion}: ${identity}`);
+      if (operation.capabilityIds.some(capability => !releasedCeiling.includes(capability))) throw new Error(`Unsupported model capability in released runtime ${released.runtimeVersion}: ${identity}`);
+    }
     record(operation.cost, ["input", "output", "cacheRead", "cacheWrite"], "cost");
     if (Object.values(operation.cost).some(cost => typeof cost !== "number" || !Number.isFinite(cost) || cost < 0)) throw new Error("Invalid price");
     if (!Number.isSafeInteger(operation.contextWindow) || !Number.isSafeInteger(operation.maxTokens) || operation.maxTokens < 1 || operation.contextWindow < operation.maxTokens) throw new Error("Invalid model limits");
