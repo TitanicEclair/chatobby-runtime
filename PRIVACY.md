@@ -3,10 +3,12 @@
 Chatobby Runtime executes locally and does not currently use a Chatobby account,
 hosted Chatobby storage, product analytics, or automatic crash reporting.
 
-Version 0.5.3 temporarily provides Full file, command and network access without
-sandboxing. Saved mode and network choices are inactive. Memory and session
-queries remain scoped to their Project or Vault chat; ordinary file and shell
-tools can access other locations available to the operating-system account.
+Version 0.5.4 provides Read-only, Workspace or Full access with saved workspace
+choices and one-time approvals. Built-in file and command tools follow these
+application permissions; OS sandboxing remains unavailable. Network access
+remains on, and Obsidian and MCP access are configured separately. Full access
+can reach other locations available to the operating-system account. Memory
+and session queries retain their Project or Vault scope independently.
 
 When you use a remote model, Chatobby sends that provider the prompt and context
 needed for the request. Depending on your instructions and permissions, this

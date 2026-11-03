@@ -8,9 +8,9 @@ communicates with the connector over authenticated loopback connections.
 macOS and Linux support are experimental and have not yet completed
 representative physical-device acceptance.
 
-> **0.5.3: Full access.** Sandboxing is temporarily unavailable. File, command
-> and network tools use your operating-system account's access, including
-> outside the current Vault or Project.
+> **0.5.4: Workspace permissions.** Choose Read-only, Workspace or Full access,
+> with saved workspace choices and one-time approvals. These are application
+> controls; OS sandboxing remains unavailable.
 
 ## Install through Obsidian
 
@@ -51,16 +51,17 @@ reported context limits and server output defaults. Per-model overrides are
 available when needed. See the
 [local model setup guide](https://github.com/TitanicEclair/chatobby-obsidian/blob/main/docs/local-model-connections.md).
 
-## Full access in 0.5.3
+## Workspace permissions in 0.5.4
 
-Read-only, Workspace and Network controls are temporarily hidden. Saved choices
-are retained but inactive. Windows can use compatible existing PowerShell
-installations; native sandbox setup is not required.
+Choose Read-only, Workspace or Full access in the composer or Permissions page.
+Built-in file and command tools follow the saved choice for each Vault or
+Project; exceptions can request one-time approval. Network access remains on.
+Full access uses the operating-system account's authority, including outside
+the current Vault or Project. These controls do not create an OS sandbox.
 
-Memory and session-search tools remain scoped to the current Project or Vault
-chat. These application query filters do not restrict file or shell access.
-Obsidian app access and enabled MCP tools remain separate choices. See the
-[0.5.3 release notes](RELEASE_NOTES_0.5.3.md).
+Memory and session-search tools retain their own workspace filters. Obsidian
+app access and enabled MCP tools are configured separately. See the concise
+[0.5.4 release notes](RELEASE_NOTES_0.5.4.md).
 
 ## Distribution and source
 

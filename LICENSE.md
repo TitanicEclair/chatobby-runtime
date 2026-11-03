@@ -4,7 +4,7 @@ Copyright © 2026 Madelyn Cruz Tan. All rights reserved.
 
 Chatobby Runtime is proprietary software. Downloading the runtime does not
 transfer ownership or grant an open-source licence. Installation and use are
-governed by the [full Chatobby Runtime 0.5.3 licence](https://github.com/TitanicEclair/chatobby-runtime/releases/download/0.5.3/CHATOBBY-RUNTIME-LICENSE.txt).
+governed by the [full Chatobby Runtime 0.5.4 licence](https://github.com/TitanicEclair/chatobby-runtime/releases/download/0.5.4/CHATOBBY-RUNTIME-LICENSE.txt).
 The same complete text is included at `compliance/CHATOBBY-RUNTIME-LICENSE.txt`
 inside that version's runtime package. For another version, use the licence
 attached to its [matching release](https://github.com/TitanicEclair/chatobby-runtime/releases).
