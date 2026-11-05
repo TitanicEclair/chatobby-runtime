@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "contentSha256": "cfc9c527ae449fd3c3169c5ac7a0088050c6175c82a4addcae91130ab710292f",
+  "contentSha256": "8e1e2e9f441e93c9083231ffdd067f871b59a5df2b5b09957285bd6bb368f0a2",
   "payload": {
     "schemaVersion": 2,
     "product": "Chatobby",
-    "generatedAt": "2026-11-04T12:16:44.632Z",
-    "expiresAt": "2026-11-11T12:16:44.632Z",
+    "generatedAt": "2026-11-05T12:30:06.172Z",
+    "expiresAt": "2026-11-12T12:30:06.172Z",
     "runtimeCompatibility": {
       "minimum": "0.5.3",
       "maximumExclusive": "0.5.5"
@@ -1991,9 +1991,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.17,
-          "output": 9.7224,
-          "cacheRead": 0.17,
+          "input": 0.1567,
+          "output": 9.3388,
+          "cacheRead": 0.15,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -2029,9 +2029,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.0269,
-          "output": 0.0996,
-          "cacheRead": 0.0269,
+          "input": 0.0285,
+          "output": 0.0923,
+          "cacheRead": 0.0285,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -2282,9 +2282,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.115,
-          "output": 4.6,
-          "cacheRead": 0.11,
+          "input": 0.103,
+          "output": 4.11,
+          "cacheRead": 0.098,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -2338,9 +2338,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.072,
-          "output": 0.215,
-          "cacheRead": 0.036,
+          "input": 0.035,
+          "output": 0.106,
+          "cacheRead": 0.018,
           "cacheWrite": 0
         },
         "contextWindow": 262144,
@@ -2403,6 +2403,23 @@
       {
         "type": "model.update",
         "providerId": "openrouter",
+        "modelId": "meta-llama/llama-3.3-70b-instruct",
+        "name": "Meta: Llama 3.3 70B Instruct",
+        "capabilityIds": [
+          "text-input"
+        ],
+        "cost": {
+          "input": 0.2,
+          "output": 0.52,
+          "cacheRead": 0.1,
+          "cacheWrite": 0
+        },
+        "contextWindow": 131072,
+        "maxTokens": 128000
+      },
+      {
+        "type": "model.update",
+        "providerId": "openrouter",
         "modelId": "meta-llama/llama-4-maverick",
         "name": "Meta: Llama 4 Maverick",
         "capabilityIds": [
@@ -2410,13 +2427,13 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.1875,
-          "output": 0.6525,
-          "cacheRead": 0.05,
+          "input": 0.35,
+          "output": 1,
+          "cacheRead": 0.17,
           "cacheWrite": 0
         },
         "contextWindow": 524288,
-        "maxTokens": 16384
+        "maxTokens": 32768
       },
       {
         "type": "model.update",
@@ -2591,9 +2608,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.2,
+          "input": 0.192,
           "output": 16,
-          "cacheRead": 0.19,
+          "cacheRead": 0.182,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -2943,6 +2960,23 @@
         },
         "contextWindow": 262144,
         "maxTokens": 235929
+      },
+      {
+        "type": "model.update",
+        "providerId": "openrouter",
+        "modelId": "qwen/qwen3-next-80b-a3b-instruct",
+        "name": "Qwen: Qwen3 Next 80B A3B Instruct",
+        "capabilityIds": [
+          "text-input"
+        ],
+        "cost": {
+          "input": 0.09,
+          "output": 1.1,
+          "cacheRead": 0,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 16384
       },
       {
         "type": "model.update",
@@ -3400,9 +3434,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.08,
-          "output": 3.6,
-          "cacheRead": 0.076,
+          "input": 0.0699,
+          "output": 1.4,
+          "cacheRead": 0.0689,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -3419,13 +3453,13 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.0269,
-          "output": 0.0996,
-          "cacheRead": 0.0269,
+          "input": 0.15,
+          "output": 0.5,
+          "cacheRead": 0.03,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
-        "maxTokens": 131072
+        "maxTokens": 943717
       },
       {
         "type": "model.update",
@@ -7688,8 +7722,8 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.032,
-          "output": 0.288,
+          "input": 0.006,
+          "output": 0.5,
           "cacheRead": 0.005,
           "cacheWrite": 0
         },
@@ -7707,9 +7741,9 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.1035,
+          "input": 0.0927,
           "output": 8,
-          "cacheRead": 0.1,
+          "cacheRead": 0.0927,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -8044,13 +8078,13 @@
           "text-input"
         ],
         "cost": {
-          "input": 0.05,
-          "output": 0.15,
-          "cacheRead": 0.004,
+          "input": 0.112,
+          "output": 0.336,
+          "cacheRead": 0.00336,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
-        "maxTokens": 384000
+        "maxTokens": 131072
       },
       {
         "type": "model.add",
@@ -8209,6 +8243,25 @@
         },
         "contextWindow": 131072,
         "maxTokens": 32768
+      },
+      {
+        "type": "model.add",
+        "providerId": "openrouter",
+        "modelId": "inclusionai/ling-3.0-tiny",
+        "templateModelId": "~anthropic/claude-fable-latest",
+        "name": "inclusionAI: Ling 3.0 Tiny",
+        "capabilityIds": [
+          "reasoning",
+          "text-input"
+        ],
+        "cost": {
+          "input": 0.015,
+          "output": 0.045,
+          "cacheRead": 0.003,
+          "cacheWrite": 0
+        },
+        "contextWindow": 262144,
+        "maxTokens": 250000
       },
       {
         "type": "model.add",
@@ -9080,6 +9133,24 @@
       {
         "type": "model.add",
         "providerId": "openrouter",
+        "modelId": "ricursiveai/ripple-65b-preview",
+        "templateModelId": "~anthropic/claude-fable-latest",
+        "name": "ricursiveAI/Ripple-65B-Preview",
+        "capabilityIds": [
+          "text-input"
+        ],
+        "cost": {
+          "input": 0.2,
+          "output": 0.6,
+          "cacheRead": 0.05,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 131072
+      },
+      {
+        "type": "model.add",
+        "providerId": "openrouter",
         "modelId": "sakana/fugu-max",
         "templateModelId": "~anthropic/claude-fable-latest",
         "name": "Sakana: Fugu Max",
@@ -9506,6 +9577,26 @@
           "input": 1.25,
           "output": 4.25,
           "cacheRead": 0.15,
+          "cacheWrite": 0
+        },
+        "contextWindow": 1048576,
+        "maxTokens": 131072
+      },
+      {
+        "type": "model.add",
+        "providerId": "together",
+        "modelId": "moonshotai/Kimi-K3.1-Pro",
+        "templateModelId": "MiniMaxAI/MiniMax-M3",
+        "name": "Kimi K3.1 Pro",
+        "capabilityIds": [
+          "image-input",
+          "reasoning",
+          "text-input"
+        ],
+        "cost": {
+          "input": 2,
+          "output": 10,
+          "cacheRead": 0.2,
           "cacheWrite": 0
         },
         "contextWindow": 1048576,
@@ -10578,10 +10669,10 @@
           "input": 2,
           "output": 10,
           "cacheRead": 0.2,
-          "cacheWrite": 2
+          "cacheWrite": 0
         },
-        "contextWindow": 1048576,
-        "maxTokens": 1048576
+        "contextWindow": 1000000,
+        "maxTokens": 262144
       },
       {
         "type": "model.add",
@@ -11917,6 +12008,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "catalogue-current",
-    "value": "AiFj8q6dXIqoQIugdrltN0KPgY8kkcLhpGATpKShGintN4/glsfn7kc2vEoLuCOWNOA3PoI4lo1HzzofS0xPDw=="
+    "value": "OpK8limVRkeqX5jzpfLvoB4jU/Xjb2e28sgmWc4FVuNzyWzk7obrXdM+7dwgvnX2yJpCP4frINtM4wgxNLH9CQ=="
   }
 }
