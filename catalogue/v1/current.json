@@ -1,11 +1,11 @@
 {
   "schemaVersion": 2,
-  "contentSha256": "6b3db7a85647f2e957e5927046dde0e9978dd6febc552361ee84939d7b9dd32e",
+  "contentSha256": "9736b0b03a893ec26b3f7e717933211d2b26159916e79a9a321ec6a74c0c47f3",
   "payload": {
     "schemaVersion": 2,
     "product": "Chatobby",
-    "generatedAt": "2026-11-21T13:42:13.089Z",
-    "expiresAt": "2026-11-28T13:42:13.089Z",
+    "generatedAt": "2026-11-25T14:33:44.927Z",
+    "expiresAt": "2026-12-02T14:33:44.927Z",
     "runtimeCompatibility": {
       "minimum": "0.5.3",
       "maximumExclusive": "0.5.5"
@@ -12008,6 +12008,6 @@
   "signature": {
     "algorithm": "ed25519",
     "keyId": "catalogue-current",
-    "value": "9NEk90fPiHE0JRC5WbiEUMZRmQpwnO4iYT5bqpUCaGxwuGXeVyxtNRnDgqC/S84EHPnrTa5c05ZUsDtDqpvYCw=="
+    "value": "wP2f6tUQk8PKLQBOVuerG42vEkt/XR5/WPRxgCzjuJScYSTQBptvgcPjplrlP6aIpko/PPVQjjM9b6fiiUNkAA=="
   }
 }
